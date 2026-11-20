@@ -1,75 +1,66 @@
 {
-  "version": "2.2.0",
+  "version": "2.2.1",
   "channel": "beta",
-  "date": "2026-11-20T23:24:37.653Z",
-  "page": "https://github.com/AlessandroAudino/drift-releases/releases/tag/v2.2.0",
+  "date": "2026-11-20T23:36:28.488Z",
+  "page": "https://github.com/AlessandroAudino/drift-releases/releases/tag/v2.2.1",
   "notes": {
     "en": [
-      "Drift now keeps itself up to date: new versions download quietly in the background and install when Drift restarts.",
-      "A new Updates section in Settings › General shows what's new, lets you check for updates, and has a switch for beta versions.",
-      "Every download is checked against its fingerprint before it is installed, so a damaged download is never used."
+      "Your first automatic update: from now on, new versions of Drift arrive just like this one.",
+      "New \"Check for updates…\" in the menu bar / tray menu."
     ],
     "it": [
-      "Drift ora si aggiorna da solo: le nuove versioni si scaricano in silenzio in background e si installano quando Drift si riavvia.",
-      "La nuova sezione Aggiornamenti in Impostazioni › Generali mostra le novità, permette di cercare aggiornamenti e ha un interruttore per le versioni beta.",
-      "Ogni download viene confrontato con la sua impronta prima dell'installazione, così un download danneggiato non viene mai usato."
+      "Il tuo primo aggiornamento automatico: d'ora in poi le nuove versioni di Drift arrivano proprio così.",
+      "Nuova voce \"Cerca aggiornamenti…\" nel menu della barra dei menu / dell'area di notifica."
     ],
     "es": [
-      "Drift ahora se mantiene al día solo: las nuevas versiones se descargan en segundo plano y se instalan cuando Drift se reinicia.",
-      "Una nueva sección Actualizaciones en Ajustes › General muestra las novedades, permite buscar actualizaciones y tiene un interruptor para las versiones beta.",
-      "Cada descarga se comprueba con su huella antes de instalarse, así que nunca se usa una descarga dañada."
+      "Tu primera actualización automática: a partir de ahora, las nuevas versiones de Drift llegan igual que esta.",
+      "Nuevo \"Buscar actualizaciones…\" en el menú de la barra de menús / de la bandeja del sistema."
     ],
     "fr": [
-      "Drift se tient désormais à jour tout seul : les nouvelles versions se téléchargent discrètement en arrière-plan et s'installent au redémarrage de Drift.",
-      "Une nouvelle section Mises à jour dans Réglages › Général présente les nouveautés, permet de rechercher les mises à jour et propose un interrupteur pour les versions bêta.",
-      "Chaque téléchargement est vérifié grâce à son empreinte avant l'installation : un téléchargement endommagé n'est jamais utilisé."
+      "Votre première mise à jour automatique : désormais, les nouvelles versions de Drift arrivent comme celle-ci.",
+      "Nouveau : « Rechercher des mises à jour… » dans le menu de la barre des menus / de la zone de notification."
     ],
     "de": [
-      "Drift hält sich jetzt selbst aktuell: Neue Versionen werden leise im Hintergrund geladen und beim Neustart von Drift installiert.",
-      "Der neue Bereich „Updates“ unter Einstellungen › Allgemein zeigt, was neu ist, sucht auf Wunsch nach Updates und hat einen Schalter für Beta-Versionen.",
-      "Jeder Download wird vor der Installation anhand seines Fingerabdrucks geprüft, ein beschädigter Download wird also nie verwendet."
+      "Dein erstes automatisches Update: Ab jetzt kommen neue Versionen von Drift genau so wie diese.",
+      "Neu: „Nach Updates suchen…“ im Menü der Menüleiste bzw. im Infobereich."
     ],
     "pt-BR": [
-      "Agora o Drift se mantém atualizado sozinho: as novas versões são baixadas discretamente em segundo plano e instaladas quando o Drift reinicia.",
-      "A nova seção Atualizações em Ajustes › Geral mostra as novidades, permite procurar atualizações e tem uma chave para as versões beta.",
-      "Cada download é conferido com a sua impressão digital antes da instalação, então um download danificado nunca é usado."
+      "Sua primeira atualização automática: daqui em diante, as novas versões do Drift chegam assim como esta.",
+      "Novo \"Procurar atualizações…\" no menu da barra de menus / da bandeja do sistema."
     ],
     "ja": [
-      "Driftが自分で最新の状態を保つようになりました。新しいバージョンはバックグラウンドで静かにダウンロードされ、Driftの再起動時にインストールされます。",
-      "「設定」›「一般」に新しい「アップデート」欄ができました。新機能の確認、アップデートの確認、ベータ版の切り替えができます。",
-      "ダウンロードはインストール前に毎回フィンガープリントで確認されるので、壊れたファイルが使われることはありません。"
+      "初めての自動アップデートです。これからは、新しいバージョンのDriftがこのように届きます。",
+      "メニューバー／タスクトレイのメニューに「アップデートを確認…」を追加しました。"
     ],
     "ko": [
-      "이제 Drift가 알아서 최신 상태를 유지해요. 새 버전은 백그라운드에서 조용히 다운로드되고 Drift를 다시 시작할 때 설치돼요.",
-      "설정 › 일반에 새로 생긴 업데이트 항목에서 새로운 기능을 보고, 업데이트를 확인하고, 베타 버전을 켜고 끌 수 있어요.",
-      "모든 다운로드는 설치 전에 지문으로 확인되므로 손상된 파일은 절대 사용되지 않아요."
+      "첫 자동 업데이트예요. 이제부터 새 버전의 Drift는 이렇게 도착해요.",
+      "메뉴 막대 / 시스템 트레이 메뉴에 \"업데이트 확인…\"이 새로 생겼어요."
     ],
     "zh-CN": [
-      "Drift 现在会自动保持最新：新版本会在后台悄悄下载，并在 Drift 重新启动时安装。",
-      "“设置 › 通用”中新增了“更新”部分，可以查看新功能、检查更新，还有测试版开关。",
-      "每次下载在安装前都会用指纹校验，损坏的下载绝不会被使用。"
+      "这是你的第一次自动更新：从现在起，新版本的 Drift 都会像这样自动送达。",
+      "菜单栏／系统托盘菜单中新增“检查更新…”。"
     ]
   },
   "files": {
     "darwin-arm64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-2.2.0-mac-arm64.zip",
-      "size": 179749006,
-      "sha512": "85Ca6BJ98FgRGe2P/L1z8eFpAiS7SSjhYGBQ7adahnSx7vVAAg61OZlotaWG/ySyEMw5im9MyUdJoWgEvMWwHw=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-2.2.1-mac-arm64.zip",
+      "size": 179750083,
+      "sha512": "Qh3zR97HUA6tmdni+c8K4qBMM2TDUFNidy/o9toLAK/1drPwQpMxH2ibriYdYMOCxm5ENbxVTwZ3b7ItUMHMmQ=="
     },
     "darwin-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-2.2.0-mac-x64.zip",
-      "size": 186579453,
-      "sha512": "pxafs7tnN6U8XQTL+JONehRDy5awJ4T4lkaGDOvVyKK+eL3R9ZUl3US1FipjnfiUIviGaV4+IE637si2/5uX/A=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-2.2.1-mac-x64.zip",
+      "size": 186580537,
+      "sha512": "9a814B9jfXOZISy4VD6xFFJYGXK7TQOXoK1ZijTaWcUx3DIPExAW1Ze9EVQEX0lIPkh3OXAR4DgRM9s7Cxy59w=="
     },
     "win32-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-Setup-2.2.0.exe",
-      "size": 173478229,
-      "sha512": "jLkWCURIYOtGvGVUlnfSD4zrAhFJorZBHR6Xb4LxwpgP1hti9lcwmBU295/rkWtShBd+5JsX3ZOX8432zIFXqg=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-Setup-2.2.1.exe",
+      "size": 173479320,
+      "sha512": "0WVCXpxCFfI2E3MPQvgE6yHwapMbgJPxazoan820XNBWJPEaHQ++gVrR1pJn050a9CZiZtFT2RoNNSuXpNSldg=="
     },
     "linux-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-2.2.0-linux-x86_64.AppImage",
-      "size": 180175513,
-      "sha512": "yBaYPbsv1ywjb1kI8gxNAIRBbcJnkAsr/v46LpjZJeGjdotIQprxwgYtsYngH/BxYJSfUp8YPVI5fIK3uXEUPA=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-2.2.1-linux-x86_64.AppImage",
+      "size": 180175528,
+      "sha512": "vBN6OTZhwEf8LGBMlSfwPvPtR3qtR86MkXM+idKzTSmQptPh9WYnGU24jPDAsgFOR4GJgY9HE7xQQWaaeSqv4w=="
     }
   }
 }

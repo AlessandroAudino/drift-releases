@@ -5,18 +5,17 @@ with painted wallpapers that follow the time of day. For macOS and Windows.
 
 This page only holds the downloads. Install Drift once: after that it keeps itself up to date.
 
-## Drift 2.2.0
+## Drift 2.2.1
 
-- Drift now keeps itself up to date: new versions download quietly in the background and install when Drift restarts.
-- A new Updates section in Settings › General shows what's new, lets you check for updates, and has a switch for beta versions.
-- Every download is checked against its fingerprint before it is installed, so a damaged download is never used.
+- Your first automatic update: from now on, new versions of Drift arrive just like this one.
+- New "Check for updates…" in the menu bar / tray menu.
 
 | Computer | Download |
 | --- | --- |
-| Mac with Apple silicon (M1, M2, M3, M4…) | [Drift-2.2.0-mac-arm64.dmg](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-2.2.0-mac-arm64.dmg) |
-| Mac with an Intel processor | [Drift-2.2.0-mac-x64.dmg](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-2.2.0-mac-x64.dmg) |
-| Windows | [Drift-Setup-2.2.0.exe](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-Setup-2.2.0.exe) |
-| Linux | [Drift-2.2.0-linux-x86_64.AppImage](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.0/Drift-2.2.0-linux-x86_64.AppImage) |
+| Mac with Apple silicon (M1, M2, M3, M4…) | [Drift-2.2.1-mac-arm64.dmg](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-2.2.1-mac-arm64.dmg) |
+| Mac with an Intel processor | [Drift-2.2.1-mac-x64.dmg](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-2.2.1-mac-x64.dmg) |
+| Windows | [Drift-Setup-2.2.1.exe](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-Setup-2.2.1.exe) |
+| Linux | [Drift-2.2.1-linux-x86_64.AppImage](https://github.com/AlessandroAudino/drift-releases/releases/download/v2.2.1/Drift-2.2.1-linux-x86_64.AppImage) |
 
 ## Installing on a Mac
 
