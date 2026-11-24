@@ -1,75 +1,57 @@
 {
-  "version": "2.4.1",
+  "version": "2.4.3",
   "channel": "beta",
-  "date": "2026-11-23T08:48:19.013Z",
-  "page": "https://github.com/AlessandroAudino/drift-releases/releases/tag/v2.4.1",
+  "date": "2026-11-24T21:09:36.908Z",
+  "page": "https://github.com/AlessandroAudino/drift-releases/releases/tag/v2.4.3",
   "notes": {
     "en": [
-      "Festivities: Drift now celebrates your country's festivities, and invites you to the world's with a postcard that drifts onto your screen. Settings › Festivities, with a countdown to the next one.",
-      "The Advent calendar, from 1 December: every day Santa brings a numbered box, and each one you open decorates your desktop a little more, until Christmas Eve.",
-      "Hanukkah, from 4 December: one more light on your windows every evening at sunset, for eight nights."
+      "Small improvements behind the scenes: a personal invite code can now open more than test versions. Nothing changes if you don't have one."
     ],
     "it": [
-      "Feste: Drift ora festeggia le feste del tuo paese, e ti invita a quelle del mondo con una cartolina che scende sul tuo schermo. Impostazioni › Feste, con il conto alla rovescia per la prossima.",
-      "Il calendario dell'Avvento, dal 1° dicembre: ogni giorno Babbo Natale porta una scatola numerata, e ognuna che apri decora un po' di più la tua scrivania, fino alla Vigilia.",
-      "Hanukkah, dal 4 dicembre: una luce in più sulle tue finestre ogni sera al tramonto, per otto sere."
+      "Piccoli miglioramenti dietro le quinte: un codice d'invito personale ora può aprire più delle sole versioni di prova. Se non ne hai uno, non cambia nulla."
     ],
     "es": [
-      "Fiestas: Drift ahora celebra las fiestas de tu país, y te invita a las del mundo con una postal que baja flotando a tu pantalla. Ajustes › Fiestas, con la cuenta atrás para la próxima.",
-      "El calendario de Adviento, desde el 1 de diciembre: cada día Papá Noel trae una caja numerada, y cada una que abres decora un poco más tu escritorio, hasta Nochebuena.",
-      "Janucá, desde el 4 de diciembre: una luz más en tus ventanas cada tarde al ponerse el sol, durante ocho noches."
+      "Pequeñas mejoras internas: un código de invitación personal ahora puede abrir algo más que versiones de prueba. Si no tienes uno, no cambia nada."
     ],
     "fr": [
-      "Fêtes : Drift célèbre maintenant les fêtes de votre pays, et vous invite à celles du monde avec une carte postale qui descend sur votre écran. Réglages › Fêtes, avec le compte à rebours jusqu'à la prochaine.",
-      "Le calendrier de l'Avent, dès le 1er décembre : chaque jour le Père Noël apporte une boîte numérotée, et chaque boîte ouverte décore un peu plus votre bureau, jusqu'au réveillon.",
-      "Hanoucca, dès le 4 décembre : une lumière de plus sur vos fenêtres chaque soir au coucher du soleil, pendant huit nuits."
+      "Petites améliorations en coulisses : un code d'invitation personnel peut désormais ouvrir plus que des versions de test. Si vous n'en avez pas, rien ne change."
     ],
     "de": [
-      "Feste: Drift feiert jetzt die Feste deines Landes und lädt dich mit einer Post­karte, die auf deinen Bildschirm schwebt, zu denen der Welt ein. Einstellungen › Feste, mit einem Countdown bis zum nächsten.",
-      "Der Advents­kalender ab dem 1. Dezember: Jeden Tag bringt der Weihnachts­mann eine nummerierte Schachtel, und jede, die du öffnest, schmückt deinen Schreib­tisch ein bisschen mehr, bis Heilig­abend.",
-      "Chanukka ab dem 4. Dezember: acht Abende lang bei Sonnen­untergang ein Licht mehr auf deinen Fenstern."
+      "Kleine Verbesserungen im Hinter­grund: Ein persönlicher Einladungs­code kann jetzt mehr öffnen als nur Test­versionen. Ohne Code ändert sich nichts."
     ],
     "pt-BR": [
-      "Festas: o Drift agora comemora as festas do seu país e convida você para as do mundo com um cartão-postal que desce flutuando na sua tela. Ajustes › Festas, com a contagem regressiva para a próxima.",
-      "O calendário do Advento, a partir de 1º de dezembro: todo dia o Papai Noel traz uma caixa numerada, e cada uma que você abre decora um pouco mais a sua área de trabalho, até a véspera de Natal.",
-      "Hanukkah, a partir de 4 de dezembro: mais uma luz nas suas janelas a cada pôr do sol, durante oito noites."
+      "Pequenas melhorias nos bastidores: um código de convite pessoal agora pode abrir mais do que versões de teste. Se você não tem um, nada muda."
     ],
     "ja": [
-      "お祝い：Driftがあなたの国のお祝いを一緒に祝うようになりました。世界のお祝いには、画面に舞い降りるポストカードでお誘いします。設定 › お祝い で、次のお祝いまでのカウントダウンも見られます。",
-      "12月1日からアドベントカレンダー：サンタが毎日番号つきの箱を届け、開けるたびにデスクトップが少しずつ飾られていきます。クリスマスイブまで続きます。",
-      "12月4日からハヌカ：8日間、毎晩日が沈むと窓の明かりがひとつ増えます。"
+      "内部の小さな改善：個人用の招待コードで、テスト版以外のものも開けるようになりました。コードをお持ちでない場合は何も変わりません。"
     ],
     "ko": [
-      "축제: 이제 Drift가 내 나라의 축제를 함께 축하하고, 화면으로 내려앉는 엽서로 세계의 축제에 초대해요. 설정 › 축제에서 다음 축제까지의 카운트다운도 볼 수 있어요.",
-      "12월 1일부터 어드벤트 캘린더: 산타가 매일 번호가 적힌 상자를 가져다주고, 열 때마다 크리스마스이브까지 바탕화면이 조금씩 더 꾸며져요.",
-      "12월 4일부터 하누카: 8일 동안 매일 해 질 녘에 창문 위의 빛이 하나씩 늘어나요."
+      "보이지 않는 곳의 작은 개선: 이제 개인 초대 코드로 테스트 버전 말고도 열 수 있는 것이 생겼어요. 코드가 없다면 달라지는 건 없어요."
     ],
     "zh-CN": [
-      "节日：Drift 现在会和你一起庆祝你所在国家的节日，并用一张飘落到屏幕上的明信片邀请你加入世界各地的节日。在“设置 › 节日”里还能看到下一个节日的倒计时。",
-      "降临节日历，从 12 月 1 日开始：圣诞老人每天送来一个带编号的盒子，每打开一个，你的桌面就多一点装饰，一直到平安夜。",
-      "光明节，从 12 月 4 日开始：连续八个晚上，每天日落时窗户上多亮一盏灯。"
+      "幕后的小改进：个人邀请码现在不只可以打开测试版本。如果你没有邀请码，一切照旧。"
     ]
   },
   "files": {
     "darwin-arm64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.1/Drift-2.4.1-mac-arm64.zip",
-      "size": 181271031,
-      "sha512": "pn9IwP3zbZgvi8CHddXHwHYhFqLaxsTVhBD5S879G/dvDwbSOX+wPCK2lEe6SJGOkiCD3VcQ2mtJ/AYHkfOnJA=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-2.4.3-mac-arm64.zip",
+      "size": 181341032,
+      "sha512": "HmFWrTYiFbDp5Fzgicrzg0oRuU1dCe7gLRMEYqwqIsaJc6ixTKO5HClHLr7gpO3lIDg8tZiiJ2Le/0U3rLaDrw=="
     },
     "darwin-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.1/Drift-2.4.1-mac-x64.zip",
-      "size": 188101491,
-      "sha512": "E9mhWFMHQbJGwuKmEKLGYGhKqQL/CHk4/57cf+/yGkkaTCpwC1gyLq/aPa91b2w1QPBkUYfsEA4tNRCV5pcCOA=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-2.4.3-mac-x64.zip",
+      "size": 188171484,
+      "sha512": "U/qfZFq4weD3pKljh97CrUEQWFeQMp9qY4EQ2yhc0bqael7kx1Dgyh5mGvsJMUC9j2uMU0Pld0ssmhN/+CVmPQ=="
     },
     "win32-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.1/Drift-Setup-2.4.1.exe",
-      "size": 174701850,
-      "sha512": "kWO7zJNLUqe9hWdfuxihHC9bDKlRXnMfhW049AdOzIVkmPcj9lBsru6frXtZbk9Dri+DPgwa02SX9X+ZkFIAqA=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-Setup-2.4.3.exe",
+      "size": 174765329,
+      "sha512": "04kRfqvnOIbBzg5iJew0Ksu08ZQjWcciTu7WXhno/RwpExwFkOhMKgBn3OBT3CcyK1ujINWty2NOlfyagQggXg=="
     },
     "linux-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.1/Drift-2.4.1-linux-x86_64.AppImage",
-      "size": 181799644,
-      "sha512": "5qvCu3p9YM6qo1ViVC6fvauNevFJrWN8vm8hqZkeofALPwLcCs7NPSso5gAe53/aJ737GWf+nhqPeRb3Jz2Ssg=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-2.4.3-linux-x86_64.AppImage",
+      "size": 181873405,
+      "sha512": "ddBktC0a5cW8kLW61op5cyxyPoWcWzF+AIKdXQC9WNHCW5M/o9CO0vd3mu5XWqaILrh78UaQPaLjtMybZOFS2Q=="
     }
   }
 }
