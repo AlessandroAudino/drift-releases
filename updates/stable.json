@@ -1,57 +1,111 @@
 {
-  "version": "2.4.3",
+  "version": "2.5.2",
   "channel": "stable",
-  "date": "2026-11-24T21:09:36.908Z",
-  "page": "https://github.com/AlessandroAudino/drift-releases/releases/tag/v2.4.3",
+  "date": "2026-11-26T12:53:50.920Z",
+  "page": "https://github.com/AlessandroAudino/drift-releases/releases/tag/v2.5.2",
   "notes": {
     "en": [
-      "Small improvements behind the scenes: a personal invite code can now open more than test versions. Nothing changes if you don't have one."
+      "Christmas Eve and Christmas Day: storybook snow and a Christmas wallpaper, Santa's journey around the world, and his visit at sunset with presents under your tree: a handwritten letter, a Christmas app icon to keep, and a wish. The decorations stay up until the Epiphany.",
+      "The shortest day of the year, as each place keeps it: lanterns for the longest night, pomegranates for Yalda, a bowl of tangyuan for Dongzhi, a yuzu bath for Tōji, patjuk for Dongji, and sunflowers for the longest day south of the equator.",
+      "New Year's Eve: a countdown (in the menu bar on a Mac), fireworks at midnight, a box of sparklers to write with light, gold and silver confetti in the snow, the new year arriving city by city around the world, and the first sunrise of the year.",
+      "The Epiphany, each country its own: la Befana flies in on her broom, sweeps the snow off a window and leaves a stocking of sweets (and a lump of sugar coal), then takes the decorations away at sunset; the Three Kings ride along your screen following the star, leave presents by your shoes and bring a roscón with the little king hidden inside. And Christmas on 7 January, for the countries that keep it then: candles on your windows, the first star on Christmas Eve, presents on Christmas morning.",
+      "The snowy cabin takes its Christmas decorations down after the Epiphany (or as soon as la Befana has swept them away) and puts them up again on 1 December: new plain winter pictures for every time of day.",
+      "Write a wish for the new year: Drift keeps it on your computer and gives it back to you on New Year's Eve, a year later. And on 31 December, \"Your year in Drift\".",
+      "Festivities ask first: Christmas, New Year's Eve and the Epiphany bring snow and their own wallpaper once you've said yes to their postcard, and a weather or wallpaper you pick yourself stays until they end. You can switch this off in Settings › Festivities."
     ],
     "it": [
-      "Piccoli miglioramenti dietro le quinte: un codice d'invito personale ora può aprire più delle sole versioni di prova. Se non ne hai uno, non cambia nulla."
+      "La Vigilia e il giorno di Natale: neve da fiaba e uno sfondo natalizio, il viaggio di Babbo Natale intorno al mondo e la sua visita al tramonto con i regali sotto il tuo albero: una lettera scritta a mano, un'icona di Natale per l'app da tenere e un augurio. Le decorazioni restano fino all'Epifania.",
+      "Il giorno più corto dell'anno, come lo vive ogni luogo: lanterne per la notte più lunga, melagrane per Yalda, una ciotola di tangyuan per Dongzhi, un bagno allo yuzu per Tōji, il patjuk per Dongji e girasoli per il giorno più lungo a sud dell'equatore.",
+      "Capodanno: il conto alla rovescia (nella barra dei menu su Mac), i fuochi d'artificio a mezzanotte, una scatola di stelline per scrivere con la luce, coriandoli d'oro e d'argento nella neve, l'anno nuovo che arriva città dopo città in tutto il mondo e la prima alba dell'anno.",
+      "L'Epifania, ogni paese la sua: la Befana arriva sulla scopa, spazza la neve da una finestra e lascia una calza di dolci (e un pezzo di carbone di zucchero), poi al tramonto si porta via le decorazioni; i Re Magi attraversano lo schermo seguendo la stella, lasciano i regali accanto alle tue scarpe e portano un roscón con dentro il piccolo re. E il Natale del 7 gennaio, per i paesi che lo festeggiano quel giorno: candele alle finestre, la prima stella la Vigilia, i regali la mattina di Natale.",
+      "La baita nella neve toglie le decorazioni di Natale dopo l'Epifania (o appena la Befana le ha spazzate via) e le rimette il 1° dicembre: nuove immagini d'inverno senza addobbi per ogni momento della giornata.",
+      "Scrivi un desiderio per l'anno nuovo: Drift lo custodisce sul tuo computer e te lo restituisce a Capodanno, un anno dopo. E il 31 dicembre, \"Il tuo anno con Drift\".",
+      "Le feste chiedono prima: Natale, Capodanno e l'Epifania portano la neve e il loro sfondo dopo che hai accettato la loro cartolina, e il meteo o lo sfondo che scegli tu resta fino alla fine della festa. Puoi spegnerlo in Impostazioni › Feste."
     ],
     "es": [
-      "Pequeñas mejoras internas: un código de invitación personal ahora puede abrir algo más que versiones de prueba. Si no tienes uno, no cambia nada."
+      "Nochebuena y Navidad: nieve de cuento y un fondo navideño, el viaje de Papá Noel alrededor del mundo y su visita al atardecer con regalos bajo tu árbol: una carta escrita a mano, un icono navideño para la app que puedes conservar y un deseo. Los adornos se quedan hasta el día de Reyes.",
+      "El día más corto del año, tal como lo vive cada lugar: farolillos para la noche más larga, granadas para Yalda, un tazón de tangyuan para Dongzhi, un baño de yuzu para Tōji, patjuk para Dongji y girasoles para el día más largo al sur del ecuador.",
+      "Nochevieja: cuenta atrás (en la barra de menús en Mac), fuegos artificiales a medianoche, una caja de bengalas para escribir con luz, confeti dorado y plateado en la nieve, el año nuevo llegando ciudad a ciudad por todo el mundo y el primer amanecer del año.",
+      "La Epifanía, cada país la suya: la Befana llega en su escoba, barre la nieve de una ventana y deja un calcetín de dulces (y un trozo de carbón de azúcar), y al atardecer se lleva los adornos; los Reyes Magos cruzan tu pantalla siguiendo la estrella, dejan regalos junto a tus zapatos y traen un roscón con el rey escondido dentro. Y la Navidad del 7 de enero, para los países que la celebran ese día: velas en tus ventanas, la primera estrella en Nochebuena y regalos la mañana de Navidad.",
+      "La cabaña en la nieve quita los adornos de Navidad después de Reyes (o en cuanto la Befana los ha barrido) y los vuelve a poner el 1 de diciembre: nuevas imágenes de invierno sin adornos para cada momento del día.",
+      "Escribe un deseo para el año nuevo: Drift lo guarda en tu ordenador y te lo devuelve en Nochevieja, un año después. Y el 31 de diciembre, \"Tu año con Drift\".",
+      "Las fiestas preguntan primero: Navidad, Nochevieja y la Epifanía traen nieve y su propio fondo cuando aceptas su postal, y el tiempo o el fondo que elijas tú se queda hasta que terminen. Puedes desactivarlo en Ajustes › Fiestas."
     ],
     "fr": [
-      "Petites améliorations en coulisses : un code d'invitation personnel peut désormais ouvrir plus que des versions de test. Si vous n'en avez pas, rien ne change."
+      "Le réveillon et le jour de Noël : une neige de conte et un fond d'écran de Noël, le voyage du Père Noël autour du monde et sa visite au coucher du soleil avec des cadeaux sous votre sapin : une lettre manuscrite, une icône de Noël pour l'app à garder et un vœu. Les décorations restent jusqu'à l'Épiphanie.",
+      "Le jour le plus court de l'année, comme chaque endroit le vit : des lanternes pour la nuit la plus longue, des grenades pour Yalda, un bol de tangyuan pour Dongzhi, un bain au yuzu pour Tōji, du patjuk pour Dongji et des tournesols pour le jour le plus long au sud de l'équateur.",
+      "Le Nouvel An : un compte à rebours (dans la barre des menus sur Mac), un feu d'artifice à minuit, une boîte de cierges magiques pour écrire avec la lumière, des confettis dorés et argentés dans la neige, la nouvelle année qui arrive ville après ville autour du monde et le premier lever de soleil de l'année.",
+      "L'Épiphanie, chaque pays la sienne : la Befana arrive sur son balai, balaie la neige d'une fenêtre et laisse une chaussette de bonbons (et un morceau de charbon en sucre), puis emporte les décorations au coucher du soleil ; les Rois mages traversent votre écran en suivant l'étoile, laissent des cadeaux près de vos chaussures et apportent un roscón avec le petit roi caché dedans. Et Noël du 7 janvier, pour les pays qui le fêtent ce jour-là : des bougies à vos fenêtres, la première étoile la veille de Noël, des cadeaux le matin de Noël.",
+      "Le chalet sous la neige retire ses décorations de Noël après l'Épiphanie (ou dès que la Befana les a balayées) et les remet le 1er décembre : de nouvelles images d'hiver sans décorations pour chaque moment de la journée.",
+      "Écrivez un vœu pour la nouvelle année : Drift le garde sur votre ordinateur et vous le rend au Nouvel An, un an plus tard. Et le 31 décembre, « Votre année avec Drift ».",
+      "Les fêtes demandent d'abord : Noël, la Saint-Sylvestre et l'Épiphanie apportent la neige et leur propre fond d'écran une fois leur carte acceptée, et la météo ou le fond d'écran que vous choisissez reste jusqu'à leur fin. Vous pouvez le désactiver dans Réglages › Fêtes."
     ],
     "de": [
-      "Kleine Verbesserungen im Hinter­grund: Ein persönlicher Einladungs­code kann jetzt mehr öffnen als nur Test­versionen. Ohne Code ändert sich nichts."
+      "Heilig­abend und Weihnachten: Märchen­schnee und ein weihnachtlicher Hintergrund, die Reise des Weihnachts­manns um die Welt und sein Besuch bei Sonnen­untergang mit Geschenken unter deinem Baum: ein handgeschriebener Brief, ein Weihnachts-App-Symbol zum Behalten und ein Wunsch. Die Dekoration bleibt bis zum Dreikönigstag.",
+      "Der kürzeste Tag des Jahres, so wie jeder Ort ihn feiert: Laternen für die längste Nacht, Granat­äpfel für Yalda, eine Schale Tangyuan für Dongzhi, ein Yuzu-Bad für Tōji, Patjuk für Dongji und Sonnen­blumen für den längsten Tag südlich des Äquators.",
+      "Silvester: ein Countdown (in der Menü­leiste auf dem Mac), Feuer­werk um Mitternacht, eine Schachtel Wunder­kerzen zum Schreiben mit Licht, goldenes und silbernes Konfetti im Schnee, das neue Jahr, das Stadt für Stadt um die Welt zieht, und der erste Sonnen­aufgang des Jahres.",
+      "Der Dreikönigs­tag, jedes Land auf seine Art: Die Befana kommt auf ihrem Besen, fegt den Schnee von einem Fenster und lässt einen Strumpf voller Süßig­keiten da (und ein Stück Zucker­kohle), bei Sonnen­untergang nimmt sie die Dekoration mit; die Heiligen Drei Könige reiten dem Stern nach über deinen Bild­schirm, lassen Geschenke neben deinen Schuhen und bringen einen Roscón mit dem kleinen König darin. Und Weihnachten am 7. Januar für die Länder, die es dann feiern: Kerzen auf deinen Fenstern, der erste Stern an Heilig­abend und Geschenke am Weihnachts­morgen.",
+      "Die Hütte im Schnee nimmt ihre Weihnachts­dekoration nach dem Dreikönigs­tag ab (oder sobald die Befana sie weggefegt hat) und hängt sie am 1. Dezember wieder auf: neue Winter­bilder ohne Schmuck für jede Tageszeit.",
+      "Schreib einen Wunsch für das neue Jahr auf: Drift bewahrt ihn auf deinem Computer auf und gibt ihn dir an Silvester zurück, ein Jahr später. Und am 31. Dezember: „Dein Jahr mit Drift“.",
+      "Feste fragen zuerst: Weihnachten, Silvester und Dreikönig bringen Schnee und ihren eigenen Hintergrund, sobald du ihre Postkarte angenommen hast, und ein Wetter oder Hintergrund, den du selbst wählst, bleibt bis zu ihrem Ende. Abschalten kannst du das unter Einstellungen › Feste."
     ],
     "pt-BR": [
-      "Pequenas melhorias nos bastidores: um código de convite pessoal agora pode abrir mais do que versões de teste. Se você não tem um, nada muda."
+      "Véspera e dia de Natal: neve de conto de fadas e um papel de parede de Natal, a viagem do Papai Noel pelo mundo e a visita dele ao pôr do sol com presentes debaixo da sua árvore: uma carta escrita à mão, um ícone de Natal para o app que é seu para sempre e um desejo. A decoração fica até o Dia de Reis.",
+      "O dia mais curto do ano, do jeito que cada lugar celebra: lanternas para a noite mais longa, romãs para Yalda, uma tigela de tangyuan para o Dongzhi, um banho de yuzu para o Tōji, patjuk para o Dongji e girassóis para o dia mais longo ao sul do equador.",
+      "Réveillon: contagem regressiva (na barra de menus no Mac), fogos à meia-noite, uma caixa de estrelinhas para escrever com luz, confete dourado e prateado na neve, o ano novo chegando cidade por cidade pelo mundo e o primeiro nascer do sol do ano.",
+      "O Dia de Reis, cada país do seu jeito: a Befana chega na sua vassoura, varre a neve de uma janela e deixa uma meia de doces (e um pedaço de carvão de açúcar), e no pôr do sol leva as decorações embora; os Reis Magos atravessam a sua tela seguindo a estrela, deixam presentes ao lado dos seus sapatos e trazem um roscón com o reizinho escondido dentro. E o Natal de 7 de janeiro, para os países que o celebram nesse dia: velas nas suas janelas, a primeira estrela na véspera e presentes na manhã de Natal.",
+      "A cabana na neve tira a decoração de Natal depois do Dia de Reis (ou assim que a Befana a varre) e coloca de novo em 1º de dezembro: novas imagens de inverno sem enfeites para cada hora do dia.",
+      "Escreva um desejo para o ano novo: o Drift guarda no seu computador e devolve para você no Réveillon, um ano depois. E em 31 de dezembro, \"Seu ano com o Drift\".",
+      "As festas perguntam antes: o Natal, o Réveillon e a Epifania trazem neve e o próprio papel de parede depois que você aceita o cartão-postal, e o clima ou o papel de parede que você escolher fica até elas acabarem. Você pode desativar isso em Ajustes › Festas."
     ],
     "ja": [
-      "内部の小さな改善：個人用の招待コードで、テスト版以外のものも開けるようになりました。コードをお持ちでない場合は何も変わりません。"
+      "クリスマス・イブとクリスマス：おとぎ話のような雪とクリスマスの壁紙、世界を巡るサンタの旅、そして夕暮れにツリーの下へプレゼントを届けに来るサンタ。手書きの手紙、ずっと使えるクリスマスのアプリアイコン、そしてひとつの願い。飾りは公現祭（1月6日）まで残ります。",
+      "一年でいちばん短い日を、それぞれの土地のやり方で：いちばん長い夜のランタン、ヤルダーのザクロ、冬至（中国）の湯圓、冬至のゆず湯、冬至（韓国）のパッチュク、そして南半球ではいちばん長い日のひまわり。",
+      "年越し：カウントダウン（Macではメニューバーに）、真夜中の花火、光で文字を書ける手持ち花火の箱、雪に舞う金と銀の紙吹雪、世界の都市を順に巡る新年、そして一年最初の日の出。",
+      "公現祭を、それぞれの国のやり方で：ベファーナがほうきに乗ってやってきて、ウィンドウの雪を掃き、お菓子の靴下（とお砂糖の炭）を置いていき、日没には飾りを持って帰ります。三賢王は星を追って画面を進み、靴のそばにプレゼントを置き、小さな王さまが隠れたロスコンを届けます。そして1月7日にクリスマスを祝う国のための、1月7日のクリスマス：ウィンドウのろうそく、イブの一番星、クリスマスの朝のプレゼント。",
+      "雪の山小屋は公現祭のあと（またはベファーナが飾りを掃いて持ち帰ったらすぐに）クリスマスの飾りを片づけ、12月1日にまた飾りつけます。一日のすべての時間帯に、飾りのない新しい冬の絵。",
+      "新しい年への願いごとを書きましょう。Driftがパソコンの中にしまっておき、一年後の大晦日にお返しします。そして12月31日には「Driftと過ごした一年」。",
+      "お祝いはまず尋ねます。クリスマス、大晦日、公現祭は、ポストカードに「はい」と答えてから雪と専用の壁紙を届けます。自分で選んだ天気や壁紙は、お祝いが終わるまでそのまま残ります。設定 › お祝いでオフにできます。"
     ],
     "ko": [
-      "보이지 않는 곳의 작은 개선: 이제 개인 초대 코드로 테스트 버전 말고도 열 수 있는 것이 생겼어요. 코드가 없다면 달라지는 건 없어요."
+      "크리스마스이브와 크리스마스: 동화 같은 눈과 크리스마스 배경화면, 세계를 도는 산타의 여행, 그리고 해 질 녘 트리 아래에 선물을 두고 가는 산타의 방문. 손으로 쓴 편지, 영원히 간직할 크리스마스 앱 아이콘, 그리고 소원 하나. 장식은 주현절까지 그대로예요.",
+      "일 년 중 가장 짧은 날을 저마다의 방식으로: 가장 긴 밤을 위한 랜턴, 얄다의 석류, 둥즈의 탕위안, 도지의 유자탕, 동지의 팥죽, 그리고 적도 남쪽에서는 가장 긴 날의 해바라기.",
+      "새해맞이: 카운트다운(Mac에서는 메뉴 막대에), 자정의 불꽃놀이, 빛으로 글씨를 쓰는 불꽃놀이 막대 상자, 눈 속의 금빛 은빛 색종이, 도시에서 도시로 세계를 도는 새해, 그리고 새해 첫 해돋이.",
+      "주현절을 나라마다 저마다의 방식으로: 베파나가 빗자루를 타고 와서 창문의 눈을 쓸고 사탕 양말(과 설탕 석탄 한 조각)을 두고 가며, 해 질 녘에는 장식을 가져가요. 동방박사는 별을 따라 화면을 지나가며 신발 옆에 선물을 두고, 작은 왕이 숨은 로스콘을 가져와요. 그리고 1월 7일에 크리스마스를 지내는 나라를 위한 1월 7일 크리스마스: 창문의 촛불, 이브의 첫 별, 크리스마스 아침의 선물.",
+      "눈 속의 오두막은 주현절이 지나면(또는 베파나가 장식을 쓸어 가는 즉시) 크리스마스 장식을 내리고, 12월 1일에 다시 달아요. 하루의 모든 시간대를 위한, 장식 없는 새 겨울 그림.",
+      "새해 소원을 적어 보세요. Drift가 컴퓨터에 간직했다가 일 년 뒤 섣달그믐에 돌려드려요. 그리고 12월 31일에는 \"Drift와 함께한 한 해\".",
+      "축제가 먼저 물어봅니다. 크리스마스, 새해 전야, 주현절은 엽서에 응한 뒤에 눈과 전용 배경화면을 가져오고, 직접 고른 날씨나 배경화면은 축제가 끝날 때까지 그대로 유지됩니다. 설정 › 축제에서 끌 수 있습니다."
     ],
     "zh-CN": [
-      "幕后的小改进：个人邀请码现在不只可以打开测试版本。如果你没有邀请码，一切照旧。"
+      "平安夜和圣诞节：童话般的雪和圣诞壁纸，圣诞老人环游世界的旅程，以及他在日落时分来访，把礼物放在你的圣诞树下：一封手写信、一个可以永久保留的圣诞应用图标，还有一个祝愿。装饰会一直留到主显节。",
+      "一年中最短的一天，按各地的方式来过：为最长的夜晚点亮灯笼，雅尔达之夜的石榴，冬至的汤圆，日本冬至的柚子浴，韩国冬至的红豆粥，还有南半球最长一天的向日葵。",
+      "跨年：倒计时（在 Mac 上显示在菜单栏里）、午夜烟花、一盒可以用光写字的仙女棒、雪中的金色和银色彩纸、新年一座城市接一座城市地环游世界，以及新年的第一次日出。",
+      "主显节，各国有各国的过法：贝法娜骑着扫帚飞来，扫掉一扇窗户上的雪，留下一只装满糖果的袜子（还有一块糖做的煤），日落时再把装饰带走；三王跟着星星走过你的屏幕，在你的鞋子旁留下礼物，还带来一个藏着小国王的国王蛋糕。还有为在1月7日过圣诞节的国家准备的1月7日圣诞节：窗户上的蜡烛、平安夜的第一颗星星、圣诞节早上的礼物。",
+      "雪中小屋会在主显节之后（或贝法娜把装饰扫走之后）收起圣诞装饰，并在12月1日重新挂上：为一天中的每个时刻准备了新的、没有装饰的冬日画面。",
+      "写下对新一年的愿望：Drift 会把它收在你的电脑里，一年后的跨年夜再还给你。12月31日，还有\"你和 Drift 的这一年\"。",
+      "节日会先询问：圣诞节、新年前夜和主显节在你接受明信片后才带来雪和专属壁纸；你自己选择的天气或壁纸会一直保留到节日结束。可在 设置 › 节日 中关闭。"
     ]
   },
   "files": {
     "darwin-arm64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-2.4.3-mac-arm64.zip",
-      "size": 181341032,
-      "sha512": "HmFWrTYiFbDp5Fzgicrzg0oRuU1dCe7gLRMEYqwqIsaJc6ixTKO5HClHLr7gpO3lIDg8tZiiJ2Le/0U3rLaDrw=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.zip",
+      "size": 208208027,
+      "sha512": "QRbYZD1gW2rVazBukoMgMZUflJCUMQ5AeDuDcnT9Qz9sfWwxfb04OvE3Tq9aIgStjX79A9eZYbHOmWU2kLzYlA=="
     },
     "darwin-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-2.4.3-mac-x64.zip",
-      "size": 188171484,
-      "sha512": "U/qfZFq4weD3pKljh97CrUEQWFeQMp9qY4EQ2yhc0bqael7kx1Dgyh5mGvsJMUC9j2uMU0Pld0ssmhN/+CVmPQ=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.zip",
+      "size": 215038476,
+      "sha512": "ZzZYIfPcHntTVXe0Xob1AWj7SQGGyXb7CrgFP1ik2wGipmt/CqY55sB+NEihPpLkQ4pF2EtakkjYDy3hiy5E4w=="
     },
     "win32-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-Setup-2.4.3.exe",
-      "size": 174765329,
-      "sha512": "04kRfqvnOIbBzg5iJew0Ksu08ZQjWcciTu7WXhno/RwpExwFkOhMKgBn3OBT3CcyK1ujINWty2NOlfyagQggXg=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe",
+      "size": 201643992,
+      "sha512": "5eU4OEQZ7oB83DKH9CuzxDrFn7sIiQ9WOa7rX+swu1K/e7ZaGMM1Y1b8xV+bwAmrD7DXMttfvkYpx+kMEST2iw=="
     },
     "linux-x64": {
-      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.4.3/Drift-2.4.3-linux-x86_64.AppImage",
-      "size": 181873405,
-      "sha512": "ddBktC0a5cW8kLW61op5cyxyPoWcWzF+AIKdXQC9WNHCW5M/o9CO0vd3mu5XWqaILrh78UaQPaLjtMybZOFS2Q=="
+      "url": "https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage",
+      "size": 208816051,
+      "sha512": "FPphCnjZuXwkQw6vxao+x33jg6+FdegmNx7NEj6M9kp467594RR3wJNnwCcB2ekl/VzN1QeS1hzWsFtX/Iz1PQ=="
     }
   }
 }
