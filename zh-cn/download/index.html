@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN" data-weather="snow">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>下载 Drift</title>
+<meta name="description" content="雪、雨、樱花、秋叶、萤火虫和流星飘过屏幕，落在窗口上，还会和指针一起玩。附带随一天变化的手绘壁纸。适用于 Mac 和 Windows。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f1424">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var w=localStorage.getItem('drift-weather');if(/^(snow|rain|sakura|leaves|fireflies|starfall)$/.test(w))d.dataset.weather=w;if(w==='off')d.dataset.off='';}catch(e){}})();</script>
+<link rel="icon" type="image/png" href="../../images/icon-64.png">
+<link rel="apple-touch-icon" href="../../images/icon-180.png">
+<link rel="alternate" hreflang="en" href="https://alessandroaudino.github.io/drift-releases/download/">
+<link rel="alternate" hreflang="it" href="https://alessandroaudino.github.io/drift-releases/it/download/">
+<link rel="alternate" hreflang="es" href="https://alessandroaudino.github.io/drift-releases/es/download/">
+<link rel="alternate" hreflang="fr" href="https://alessandroaudino.github.io/drift-releases/fr/download/">
+<link rel="alternate" hreflang="de" href="https://alessandroaudino.github.io/drift-releases/de/download/">
+<link rel="alternate" hreflang="pt-BR" href="https://alessandroaudino.github.io/drift-releases/pt-br/download/">
+<link rel="alternate" hreflang="ja" href="https://alessandroaudino.github.io/drift-releases/ja/download/">
+<link rel="alternate" hreflang="ko" href="https://alessandroaudino.github.io/drift-releases/ko/download/">
+<link rel="alternate" hreflang="zh-CN" href="https://alessandroaudino.github.io/drift-releases/zh-cn/download/">
+<link rel="canonical" href="https://alessandroaudino.github.io/drift-releases/zh-cn/download/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="下载 Drift">
+<meta property="og:description" content="雪、雨、樱花、秋叶、萤火虫和流星飘过屏幕，落在窗口上，还会和指针一起玩。附带随一天变化的手绘壁纸。适用于 Mac 和 Windows。">
+<meta property="og:image" content="https://alessandroaudino.github.io/drift-releases/images/og.jpg">
+<meta property="og:url" content="https://alessandroaudino.github.io/drift-releases/zh-cn/download/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../assets/site.css?v=c66463fdaf">
+
+</head>
+<body class="page-download">
+<a class="skip" href="#main">跳到正文</a>
+
+<div class="sky" aria-hidden="true">
+  <div class="sky-stars"></div><div class="sky-stars big"></div>
+  <div class="sky-sun"><i></i></div>
+  <div class="sky-moon"></div>
+  <div class="sky-clouds"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<canvas id="page-weather" aria-hidden="true"></canvas>
+<div class="clock" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10Z"/></svg><span>白天</span></div>
+
+  <header class="nav">
+    <div class="nav-in">
+      <a class="brand" href="../../zh-cn/" aria-label="Drift · 首页">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span class="word">Drift</span>
+      </a>
+      <nav aria-label="首页">
+        <a href="../../zh-cn/#features">功能</a>
+        <a href="../../zh-cn/#scenes">场景</a>
+        <a href="../../zh-cn/#faq">常见问题</a>
+      </nav>
+      
+        <div class="wmenu">
+          <button type="button" class="wmenu-btn" aria-haspopup="true" aria-expanded="false" aria-controls="wmenu-pop" title="天气">
+            <span class="wmenu-glyphs" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg><svg class="glyph g-off" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span>
+            <span class="wmenu-label">正在下雪</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div class="wmenu-pop" id="wmenu-pop" role="menu" hidden>
+            <p class="wmenu-title">天气</p>
+            <button type="button" role="menuitemradio" aria-checked="true" class="wmenu-item wx-snow" data-weather="snow"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg></span><span>雪</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-rain" data-weather="rain"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg></span><span>雨</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-sakura" data-weather="sakura"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg></span><span>樱花</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-leaves" data-weather="leaves"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg></span><span>落叶</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-fireflies" data-weather="fireflies"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg></span><span>萤火虫</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-starfall" data-weather="starfall"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span>流星</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-off" data-weather="off"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span><span>关闭</span></button>
+            <p class="wmenu-note">选一种天气：它会陪你逛遍整个网站。</p>
+          </div>
+        </div>
+      <details class="lang">
+          <summary aria-label="语言"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg><span>简体中文</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg></summary>
+          <ul><li><a href="../../download/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../it/download/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../../es/download/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../fr/download/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../../de/download/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../pt-br/download/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="../../ja/download/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../../ko/download/" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="../../zh-cn/download/" hreflang="zh-CN" lang="zh-CN" data-lang="zh-CN" aria-current="true">简体中文</a></li></ul>
+        </details>
+      <a class="btn btn-small nav-dl" href="../../zh-cn/download/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>下载</span></a>
+    </div>
+  </header>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <h1><span class="drift" aria-label="下载 Drift"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>下</span></span><span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>载</span></span> <span class="w" aria-hidden="true" style="--i:2;--r:-6deg"><span>D</span></span><span class="w" aria-hidden="true" style="--i:3;--r:7deg"><span>r</span></span><span class="w" aria-hidden="true" style="--i:4;--r:-8deg"><span>i</span></span><span class="w" aria-hidden="true" style="--i:5;--r:9deg"><span>f</span></span><span class="w" aria-hidden="true" style="--i:6;--r:-4deg"><span>t</span></span></span></h1>
+    <p class="lead reveal">抢先体验期间免费。只需安装一次，之后 Drift 会自动保持最新。</p>
+    <p class="version reveal" id="version">版本 2.5.2 · 发布于 2026年11月26日</p>
+    <p class="unavailable" id="unavailable" hidden>现在无法连接到下载。请稍后再试，或打开 <a href="https://github.com/AlessandroAudino/drift-releases/releases" rel="noopener">GitHub 上的下载页面</a>。</p>
+  </div>
+</section>
+
+<section class="wrap platforms-grid">
+  <div class="win reveal platform" data-settle data-os="mac" id="mac" style="--d:0;--tilt:-1.2deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Mac</span></div>
+      
+    <div class="platform-in">
+      <p class="yours">推荐用于这台电脑</p>
+      <h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3Z" fill="currentColor" stroke="none"/></svg>Mac</h2>
+      <p class="req">macOS 13 Ventura 或更新版本</p>
+      <div class="dl-buttons">
+        <a class="btn btn-big" data-file="macArm" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.dmg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>下载 Apple 芯片版</span></a>
+        <p class="btn-note">配备 M1 或更新芯片的 Mac</p>
+        <a class="btn btn-soft" data-file="macIntel" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.dmg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>下载 Intel 版</span></a>
+        <p class="btn-note">配备 Intel 处理器的较早 Mac</p>
+      </div>
+      <details class="which">
+        <summary>我的 Mac 是哪一种？<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg></summary>
+        <p>点按左上角的苹果菜单，选择 <strong>关于本机</strong>。如果显示 <strong>芯片：Apple M1</strong>、M2、M3 或更新，请选择 Apple 芯片版；如果显示 <strong>处理器</strong> 后面跟着 <strong>Intel</strong>，请选择 Intel 版。</p>
+      </details>
+    </div>
+    </div>
+  <div class="win reveal platform" data-settle data-os="windows" id="windows" style="--d:1;--tilt:1deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Windows</span></div>
+      
+    <div class="platform-in">
+      <p class="yours">推荐用于这台电脑</p>
+      <h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.6 10.6 4.6v6.8H3.5ZM11.6 4.4 20.5 3.2v8.2h-8.9ZM3.5 12.4h7.1v6.9l-7.1-1ZM11.6 12.4h8.9v8.3l-8.9-1.2Z" fill="currentColor" stroke="none"/></svg>Windows</h2>
+      <p class="req">Windows 10 或 11，64 位</p>
+      <div class="dl-buttons">
+        <a class="btn btn-big" data-file="win" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>下载 Windows 版</span></a>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="wrap install" id="install">
+  <h2><span class="drift" aria-label="如何安装"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>如</span></span><span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>何</span></span><span class="w" aria-hidden="true" style="--i:2;--r:-6deg"><span>安</span></span><span class="w" aria-hidden="true" style="--i:3;--r:7deg"><span>装</span></span></span></h2>
+  <div class="install-grid">
+    <div class="win reveal guide" data-settle data-os="mac" style="--d:0;--tilt:-0.8deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">在 Mac 上</span></div>
+      
+      <div class="guide-in">
+        <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3Z" fill="currentColor" stroke="none"/></svg>在 Mac 上</h3>
+        <ol class="steps"><li>打开你下载的文件，把 <strong>Drift</strong> 拖到 <strong>应用程序</strong> 文件夹。</li><li>从“应用程序”打开 Drift。它待在屏幕顶部的菜单栏里：点按它的图标即可选择天气或打开设置。</li></ol>
+        <div class="warn">
+          <h4>如果 Mac 第一次阻止了 Drift</h4>
+          <p>抢先体验版本还没有在 Apple 注册，所以第一次打开 Drift 时 macOS 会先询问你。具体怎么做取决于提示内容：</p>
+          <div class="case">
+            <p class="case-title">“Apple 无法验证 Drift 是否包含恶意软件”或“无法打开 Drift”</p>
+            <p>点按 <strong>完成</strong>。打开 <strong>系统设置 › 隐私与安全性</strong> 并向下滚动。在 <em>已阻止使用“Drift”</em> 旁边点按 <strong>仍要打开</strong>，输入你的密码，然后点按 <strong>打开</strong>。</p>
+          </div>
+          <div class="case">
+            <p class="case-title">“Drift 已损坏，无法打开”</p>
+            <p>这个应用没有问题：对于没有在 Apple 注册的应用，macOS 就是这样提示的。点按 <strong>取消</strong>（不要点 <em>移到废纸篓</em>）。打开 <strong>终端</strong>（应用程序 › 实用工具 › 终端），粘贴下面这一行，按下 Return 键，然后再次打开 Drift：</p>
+            <div class="code"><code>xattr -cr /Applications/Drift.app</code><button type="button" class="copy" data-copy="xattr -cr /Applications/Drift.app"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/></svg><span>复制</span></button></div>
+            <p class="small">它只会去掉 Drift 上“从互联网下载”的标记。只需要做一次。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="win reveal guide" data-settle data-os="windows" style="--d:1;--tilt:1deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">在 Windows 上</span></div>
+      
+      <div class="guide-in">
+        <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.6 10.6 4.6v6.8H3.5ZM11.6 4.4 20.5 3.2v8.2h-8.9ZM3.5 12.4h7.1v6.9l-7.1-1ZM11.6 12.4h8.9v8.3l-8.9-1.2Z" fill="currentColor" stroke="none"/></svg>在 Windows 上</h3>
+        <ol class="steps"><li>打开你下载的安装程序（<strong>Drift-Setup</strong>）。Drift 会自动安装并启动。</li><li>如果出现蓝色窗口显示 <strong>Windows 已保护你的电脑</strong>，请点击 <strong>更多信息</strong>，然后点击 <strong>仍要运行</strong>。出现这个窗口是因为抢先体验版本还没有在 Microsoft 注册。</li><li>Drift 待在时钟旁边的系统托盘里。如果看不到它的图标，请点击那里的小箭头。</li></ol>
+      </div>
+    </div>
+  </div>
+  <p class="after reveal"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>就这样：从现在起 Drift 会自动更新，注册后的版本也会以同样的方式送达，不再有警告。</span></p>
+</section>
+
+<section class="wrap other">
+  <h2><span class="drift" aria-label="其他下载"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>其</span></span><span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>他</span></span><span class="w" aria-hidden="true" style="--i:2;--r:-6deg"><span>下</span></span><span class="w" aria-hidden="true" style="--i:3;--r:7deg"><span>载</span></span></span></h2>
+  <ul class="reveal">
+    <li><a data-file="linux" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage">Linux（AppImage，实验版：天气只会停在屏幕底部）</a></li>
+    <li><a href="https://github.com/AlessandroAudino/drift-releases/releases" rel="noopener">GitHub 上的所有版本</a></li>
+    <li><a href="../../zh-cn/whats-new/">每个版本的新功能</a></li>
+  </ul>
+</section>
+</main>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <div class="foot-brand">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span>
+        <div><strong>Drift</strong><br><span>Alessandro Audino 在意大利制作</span></div>
+      </div>
+      <nav class="foot-links" aria-label="Drift">
+        <a href="../../zh-cn/download/">下载</a>
+        <a href="../../zh-cn/whats-new/">新功能</a>
+        <a href="../../zh-cn/privacy/">隐私</a>
+        <span>联系方式: <span class="placeholder">电子邮件地址即将公布</span></span>
+      </nav>
+      <p class="copyright">© 2026 Alessandro Audino</p>
+    </div>
+  </footer>
+<script type="application/json" id="site-data">{"lang":"zh-CN","page":"download","feed":"https://raw.githubusercontent.com/AlessandroAudino/drift-releases/main/updates/stable.json","repo":"AlessandroAudino/drift-releases","downloads":{"version":"2.5.2","macArm":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.dmg","macIntel":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.dmg","win":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe","linux":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage"},"sceneBase":"../../images/scenes/","weatherNames":{"snow":"雪","rain":"雨","sakura":"樱花","leaves":"落叶","fireflies":"萤火虫","starfall":"流星","off":"关闭"},"status":{"snow":"正在下雪","rain":"正在下雨","sakura":"花瓣飘落","leaves":"落叶纷飞","fireflies":"萤火虫出来了","starfall":"星星坠落","off":"天气已关闭"},"periods":{"dawn":"黎明","day":"白天","golden":"黄金时刻","evening":"傍晚","night":"夜晚"},"gift":{"title":"圣诞老人的礼物","messages":["某个地方，一杯热可可正在等你。","你做得比自己想的更好。","今天的礼物：允许自己好好休息一下。","下雪天的心情，已解锁。","有个人很高兴这个世界上有你。","站起来伸个懒腰吧，肩膀会感谢你的。","小提醒：喝点水吧。","愿你的咖啡够浓，会议够短。","这个盒子里装着一个新的开始，好好用它。","看看窗外十秒钟。很美，对吧？","今天给某个人发一条温暖的消息吧。","每片雪花都不一样，你也是。","你找到了！明天还有一个。","吸气数到四，呼气数到六。再来一次。","好事正在路上。","待办清单可以等一分钟。笑一笑。","最好的还在后头。","没有两天是一样的。让今天属于你。","到目前为止，每一个难熬的日子你都挺过来了。","待会儿给自己来点甜的吧。"],"lang":"zh-CN"},"text":{"copy":"复制","copied":"已复制","version":"版本 {version}","released":"发布于 {date}","overEverything":"所有窗口之上","desktopOnly":"仅桌面","paused":"因全屏应用而暂停"},"releases":"https://github.com/AlessandroAudino/drift-releases/releases"}</script>
+<script src="../../assets/site.js?v=6e16d45018" defer></script>
+<script src="../../assets/weather.js?v=099991fade" defer></script>
+</body>
+</html>

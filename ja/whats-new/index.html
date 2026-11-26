@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja" data-weather="snow">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drift の新機能</title>
+<meta name="description" content="雪、雨、桜、紅葉、ホタル、流れ星が画面を舞い、ウィンドウの上に積もり、ポインタと遊びます。一日に合わせて移り変わる描かれた壁紙つき。Mac と Windows に対応。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f1424">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var w=localStorage.getItem('drift-weather');if(/^(snow|rain|sakura|leaves|fireflies|starfall)$/.test(w))d.dataset.weather=w;if(w==='off')d.dataset.off='';}catch(e){}})();</script>
+<link rel="icon" type="image/png" href="../../images/icon-64.png">
+<link rel="apple-touch-icon" href="../../images/icon-180.png">
+<link rel="alternate" hreflang="en" href="https://alessandroaudino.github.io/drift-releases/whats-new/">
+<link rel="alternate" hreflang="it" href="https://alessandroaudino.github.io/drift-releases/it/whats-new/">
+<link rel="alternate" hreflang="es" href="https://alessandroaudino.github.io/drift-releases/es/whats-new/">
+<link rel="alternate" hreflang="fr" href="https://alessandroaudino.github.io/drift-releases/fr/whats-new/">
+<link rel="alternate" hreflang="de" href="https://alessandroaudino.github.io/drift-releases/de/whats-new/">
+<link rel="alternate" hreflang="pt-BR" href="https://alessandroaudino.github.io/drift-releases/pt-br/whats-new/">
+<link rel="alternate" hreflang="ja" href="https://alessandroaudino.github.io/drift-releases/ja/whats-new/">
+<link rel="alternate" hreflang="ko" href="https://alessandroaudino.github.io/drift-releases/ko/whats-new/">
+<link rel="alternate" hreflang="zh-CN" href="https://alessandroaudino.github.io/drift-releases/zh-cn/whats-new/">
+<link rel="canonical" href="https://alessandroaudino.github.io/drift-releases/ja/whats-new/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Drift の新機能">
+<meta property="og:description" content="雪、雨、桜、紅葉、ホタル、流れ星が画面を舞い、ウィンドウの上に積もり、ポインタと遊びます。一日に合わせて移り変わる描かれた壁紙つき。Mac と Windows に対応。">
+<meta property="og:image" content="https://alessandroaudino.github.io/drift-releases/images/og.jpg">
+<meta property="og:url" content="https://alessandroaudino.github.io/drift-releases/ja/whats-new/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../assets/site.css?v=c66463fdaf">
+
+</head>
+<body class="page-whatsNew">
+<a class="skip" href="#main">本文へ移動</a>
+
+<div class="sky" aria-hidden="true">
+  <div class="sky-stars"></div><div class="sky-stars big"></div>
+  <div class="sky-sun"><i></i></div>
+  <div class="sky-moon"></div>
+  <div class="sky-clouds"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<canvas id="page-weather" aria-hidden="true"></canvas>
+<div class="clock" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10Z"/></svg><span>昼</span></div>
+
+  <header class="nav">
+    <div class="nav-in">
+      <a class="brand" href="../../ja/" aria-label="Drift · ホーム">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span class="word">Drift</span>
+      </a>
+      <nav aria-label="ホーム">
+        <a href="../../ja/#features">機能</a>
+        <a href="../../ja/#scenes">シーン</a>
+        <a href="../../ja/#faq">よくある質問</a>
+      </nav>
+      
+        <div class="wmenu">
+          <button type="button" class="wmenu-btn" aria-haspopup="true" aria-expanded="false" aria-controls="wmenu-pop" title="天気">
+            <span class="wmenu-glyphs" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg><svg class="glyph g-off" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span>
+            <span class="wmenu-label">雪が降っています</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div class="wmenu-pop" id="wmenu-pop" role="menu" hidden>
+            <p class="wmenu-title">天気</p>
+            <button type="button" role="menuitemradio" aria-checked="true" class="wmenu-item wx-snow" data-weather="snow"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg></span><span>雪</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-rain" data-weather="rain"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg></span><span>雨</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-sakura" data-weather="sakura"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg></span><span>桜</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-leaves" data-weather="leaves"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg></span><span>落ち葉</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-fireflies" data-weather="fireflies"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg></span><span>ホタル</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-starfall" data-weather="starfall"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span>流れ星</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-off" data-weather="off"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span><span>オフ</span></button>
+            <p class="wmenu-note">天気を選ぶと、サイトのどこへ行ってもついてきます。</p>
+          </div>
+        </div>
+      <details class="lang">
+          <summary aria-label="言語"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg><span>日本語</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg></summary>
+          <ul><li><a href="../../whats-new/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../it/whats-new/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../../es/whats-new/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../fr/whats-new/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../../de/whats-new/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../pt-br/whats-new/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="../../ja/whats-new/" hreflang="ja" lang="ja" data-lang="ja" aria-current="true">日本語</a></li><li><a href="../../ko/whats-new/" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="../../zh-cn/whats-new/" hreflang="zh-CN" lang="zh-CN" data-lang="zh-CN">简体中文</a></li></ul>
+        </details>
+      <a class="btn btn-small nav-dl" href="../../ja/download/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>ダウンロード</span></a>
+    </div>
+  </header>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap narrow">
+    <h1><span class="drift" aria-label="新機能"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>新</span></span><span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>機</span></span><span class="w" aria-hidden="true" style="--i:2;--r:-6deg"><span>能</span></span></span></h1>
+    <p class="lead reveal">Drift のすべてのバージョンを新しい順に。Drift は自動でアップデートされるので、いつでも最新版です。</p>
+  </div>
+</section>
+<section class="wrap narrow releases"><div class="win reveal release" data-settle style="--d:0;--tilt:-0.9deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">バージョン 2.5.2</span></div>
+      
+      <div class="release-in">
+        <header><h2>バージョン 2.5.2</h2><time datetime="2026-11-26T12:54:10Z">2026年11月26日</time></header>
+        <ul><li>クリスマス・イブとクリスマス：おとぎ話のような雪とクリスマスの壁紙、世界を巡るサンタの旅、そして夕暮れにツリーの下へプレゼントを届けに来るサンタ。手書きの手紙、ずっと使えるクリスマスのアプリアイコン、そしてひとつの願い。飾りは公現祭（1月6日）まで残ります。</li><li>一年でいちばん短い日を、それぞれの土地のやり方で：いちばん長い夜のランタン、ヤルダーのザクロ、冬至（中国）の湯圓、冬至のゆず湯、冬至（韓国）のパッチュク、そして南半球ではいちばん長い日のひまわり。</li><li>年越し：カウントダウン（Macではメニューバーに）、真夜中の花火、光で文字を書ける手持ち花火の箱、雪に舞う金と銀の紙吹雪、世界の都市を順に巡る新年、そして一年最初の日の出。</li><li>公現祭を、それぞれの国のやり方で：ベファーナがほうきに乗ってやってきて、ウィンドウの雪を掃き、お菓子の靴下（とお砂糖の炭）を置いていき、日没には飾りを持って帰ります。三賢王は星を追って画面を進み、靴のそばにプレゼントを置き、小さな王さまが隠れたロスコンを届けます。そして1月7日にクリスマスを祝う国のための、1月7日のクリスマス：ウィンドウのろうそく、イブの一番星、クリスマスの朝のプレゼント。</li><li>雪の山小屋は公現祭のあと（またはベファーナが飾りを掃いて持ち帰ったらすぐに）クリスマスの飾りを片づけ、12月1日にまた飾りつけます。一日のすべての時間帯に、飾りのない新しい冬の絵。</li><li>新しい年への願いごとを書きましょう。Driftがパソコンの中にしまっておき、一年後の大晦日にお返しします。そして12月31日には「Driftと過ごした一年」。</li><li>お祝いはまず尋ねます。クリスマス、大晦日、公現祭は、ポストカードに「はい」と答えてから雪と専用の壁紙を届けます。自分で選んだ天気や壁紙は、お祝いが終わるまでそのまま残ります。設定 › お祝いでオフにできます。</li></ul>
+      </div>
+    </div><div class="win reveal release" data-settle style="--d:1;--tilt:0.9deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">バージョン 2.4.3</span></div>
+      
+      <div class="release-in">
+        <header><h2>バージョン 2.4.3</h2><time datetime="2026-11-24T21:10:00Z">2026年11月24日</time></header>
+        <ul><li>内部の小さな改善：個人用の招待コードで、テスト版以外のものも開けるようになりました。コードをお持ちでない場合は何も変わりません。</li></ul>
+      </div>
+    </div><div class="win reveal release" data-settle style="--d:2;--tilt:-0.9deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">バージョン 2.4.1</span></div>
+      
+      <div class="release-in">
+        <header><h2>バージョン 2.4.1</h2><time datetime="2026-11-23T08:48:47Z">2026年11月23日</time></header>
+        <ul><li>お祝い：Driftがあなたの国のお祝いを一緒に祝うようになりました。世界のお祝いには、画面に舞い降りるポストカードでお誘いします。設定 › お祝い で、次のお祝いまでのカウントダウンも見られます。</li><li>12月1日からアドベントカレンダー：サンタが毎日番号つきの箱を届け、開けるたびにデスクトップが少しずつ飾られていきます。クリスマスイブまで続きます。</li><li>12月4日からハヌカ：8日間、毎晩日が沈むと窓の明かりがひとつ増えます。</li></ul>
+      </div>
+    </div><div class="win reveal release" data-settle style="--d:0;--tilt:0.9deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">バージョン 2.3.0</span></div>
+      
+      <div class="release-in">
+        <header><h2>バージョン 2.3.0</h2><time datetime="2026-11-22T13:58:18Z">2026年11月22日</time></header>
+        <ul><li>壁紙が本当の太陽に合わせて変わるようになりました。夜明け、ゴールデンアワー、夜が、一年を通してお住まいの場所の実際の日の出・日の入りに合わせて訪れます。</li><li>あなたの場所：Driftがパソコンのタイムゾーンから推定します。設定 › 壁紙で好きな都市を選ぶこともできます。情報はパソコンの中だけに保存されます。</li><li>ベータ版は、個人用の招待コードによる招待制になりました。</li></ul>
+      </div>
+    </div><div class="win reveal release" data-settle style="--d:1;--tilt:-0.9deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">バージョン 2.2.1</span></div>
+      
+      <div class="release-in">
+        <header><h2>バージョン 2.2.1</h2><time datetime="2026-11-20T23:36:44Z">2026年11月20日</time></header>
+        <ul><li>初めての自動アップデートです。これからは、新しいバージョンのDriftがこのように届きます。</li><li>メニューバー／タスクトレイのメニューに「アップデートを確認…」を追加しました。</li></ul>
+      </div>
+    </div><div class="win reveal release" data-settle style="--d:2;--tilt:0.9deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">バージョン 2.2.0</span></div>
+      
+      <div class="release-in">
+        <header><h2>バージョン 2.2.0</h2><time datetime="2026-11-20T23:24:54Z">2026年11月20日</time></header>
+        <ul><li>Driftが自分で最新の状態を保つようになりました。新しいバージョンはバックグラウンドで静かにダウンロードされ、Driftの再起動時にインストールされます。</li><li>「設定」›「一般」に新しい「アップデート」欄ができました。新機能の確認、アップデートの確認、ベータ版の切り替えができます。</li><li>ダウンロードはインストール前に毎回フィンガープリントで確認されるので、壊れたファイルが使われることはありません。</li></ul>
+      </div>
+    </div>
+</section>
+</main>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <div class="foot-brand">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span>
+        <div><strong>Drift</strong><br><span>イタリアで Alessandro Audino が制作</span></div>
+      </div>
+      <nav class="foot-links" aria-label="Drift">
+        <a href="../../ja/download/">ダウンロード</a>
+        <a href="../../ja/whats-new/">新機能</a>
+        <a href="../../ja/privacy/">プライバシー</a>
+        <span>連絡先: <span class="placeholder">メールアドレスは準備中です</span></span>
+      </nav>
+      <p class="copyright">© 2026 Alessandro Audino</p>
+    </div>
+  </footer>
+<script type="application/json" id="site-data">{"lang":"ja","page":"whatsNew","feed":"https://raw.githubusercontent.com/AlessandroAudino/drift-releases/main/updates/stable.json","repo":"AlessandroAudino/drift-releases","downloads":{"version":"2.5.2","macArm":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.dmg","macIntel":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.dmg","win":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe","linux":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage"},"sceneBase":"../../images/scenes/","weatherNames":{"snow":"雪","rain":"雨","sakura":"桜","leaves":"落ち葉","fireflies":"ホタル","starfall":"流れ星","off":"オフ"},"status":{"snow":"雪が降っています","rain":"雨が降っています","sakura":"花びらが舞っています","leaves":"葉が舞っています","fireflies":"ホタルが飛んでいます","starfall":"星が降っています","off":"天気はオフです"},"periods":{"dawn":"夜明け","day":"昼","golden":"ゴールデンアワー","evening":"夕方","night":"夜"},"gift":{"title":"サンタからのプレゼント","messages":["どこかで温かいココアがあなたを待っています。","あなたは思っているよりずっとよくやっています。","今日のプレゼント：ちゃんと休憩していい許可。","雪の日気分、解放されました。","どこかの誰かが、あなたがいてくれてうれしいと思っています。","立ち上がって伸びをしましょう。肩がよろこびます。","小さなお知らせ：お水を一杯どうぞ。","コーヒーは濃く、会議は短くありますように。","この箱には、新しいスタートが入っています。大切に使ってね。","10秒だけ窓の外を見てみましょう。きれいでしょう？","今日は誰かにやさしいメッセージを送ってみましょう。","雪の結晶はひとつひとつ違います。あなたもそう。","見つけましたね！明日もまたあります。","4つ数えて吸って、6つで吐いて。もう一度。","いいことが近づいています。","やることリストは1分くらい待ってくれます。にっこり。","いちばんいいことは、まだこれから。","同じ日は二度とありません。今日をあなたの日に。","これまでのつらい日も、ぜんぶ乗り越えてきました。","あとで甘いものでも食べましょう。"],"lang":"ja"},"text":{"copy":"コピー","copied":"コピーしました","version":"バージョン {version}","released":"{date} 公開","overEverything":"すべての前面","desktopOnly":"デスクトップのみ","paused":"全画面アプリのため一時停止中"}}</script>
+<script src="../../assets/site.js?v=6e16d45018" defer></script>
+<script src="../../assets/weather.js?v=099991fade" defer></script>
+</body>
+</html>

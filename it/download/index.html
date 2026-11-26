@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="it" data-weather="snow">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scarica Drift</title>
+<meta name="description" content="Neve, pioggia, fiori di ciliegio, foglie d'autunno, lucciole e stelle cadenti scendono sullo schermo, si posano sulle finestre e giocano con il puntatore. Con sfondi dipinti che seguono la tua giornata. Per Mac e Windows.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f1424">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var w=localStorage.getItem('drift-weather');if(/^(snow|rain|sakura|leaves|fireflies|starfall)$/.test(w))d.dataset.weather=w;if(w==='off')d.dataset.off='';}catch(e){}})();</script>
+<link rel="icon" type="image/png" href="../../images/icon-64.png">
+<link rel="apple-touch-icon" href="../../images/icon-180.png">
+<link rel="alternate" hreflang="en" href="https://alessandroaudino.github.io/drift-releases/download/">
+<link rel="alternate" hreflang="it" href="https://alessandroaudino.github.io/drift-releases/it/download/">
+<link rel="alternate" hreflang="es" href="https://alessandroaudino.github.io/drift-releases/es/download/">
+<link rel="alternate" hreflang="fr" href="https://alessandroaudino.github.io/drift-releases/fr/download/">
+<link rel="alternate" hreflang="de" href="https://alessandroaudino.github.io/drift-releases/de/download/">
+<link rel="alternate" hreflang="pt-BR" href="https://alessandroaudino.github.io/drift-releases/pt-br/download/">
+<link rel="alternate" hreflang="ja" href="https://alessandroaudino.github.io/drift-releases/ja/download/">
+<link rel="alternate" hreflang="ko" href="https://alessandroaudino.github.io/drift-releases/ko/download/">
+<link rel="alternate" hreflang="zh-CN" href="https://alessandroaudino.github.io/drift-releases/zh-cn/download/">
+<link rel="canonical" href="https://alessandroaudino.github.io/drift-releases/it/download/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Scarica Drift">
+<meta property="og:description" content="Neve, pioggia, fiori di ciliegio, foglie d'autunno, lucciole e stelle cadenti scendono sullo schermo, si posano sulle finestre e giocano con il puntatore. Con sfondi dipinti che seguono la tua giornata. Per Mac e Windows.">
+<meta property="og:image" content="https://alessandroaudino.github.io/drift-releases/images/og.jpg">
+<meta property="og:url" content="https://alessandroaudino.github.io/drift-releases/it/download/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../assets/site.css?v=c66463fdaf">
+
+</head>
+<body class="page-download">
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<div class="sky" aria-hidden="true">
+  <div class="sky-stars"></div><div class="sky-stars big"></div>
+  <div class="sky-sun"><i></i></div>
+  <div class="sky-moon"></div>
+  <div class="sky-clouds"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<canvas id="page-weather" aria-hidden="true"></canvas>
+<div class="clock" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10Z"/></svg><span>Giorno</span></div>
+
+  <header class="nav">
+    <div class="nav-in">
+      <a class="brand" href="../../it/" aria-label="Drift · Home">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span class="word">Drift</span>
+      </a>
+      <nav aria-label="Home">
+        <a href="../../it/#features">Funzioni</a>
+        <a href="../../it/#scenes">Scene</a>
+        <a href="../../it/#faq">Domande</a>
+      </nav>
+      
+        <div class="wmenu">
+          <button type="button" class="wmenu-btn" aria-haspopup="true" aria-expanded="false" aria-controls="wmenu-pop" title="Meteo">
+            <span class="wmenu-glyphs" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg><svg class="glyph g-off" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span>
+            <span class="wmenu-label">Sta nevicando</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div class="wmenu-pop" id="wmenu-pop" role="menu" hidden>
+            <p class="wmenu-title">Meteo</p>
+            <button type="button" role="menuitemradio" aria-checked="true" class="wmenu-item wx-snow" data-weather="snow"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg></span><span>Neve</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-rain" data-weather="rain"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg></span><span>Pioggia</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-sakura" data-weather="sakura"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg></span><span>Sakura</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-leaves" data-weather="leaves"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg></span><span>Foglie</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-fireflies" data-weather="fireflies"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg></span><span>Lucciole</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-starfall" data-weather="starfall"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span>Stelle cadenti</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-off" data-weather="off"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span><span>Spento</span></button>
+            <p class="wmenu-note">Scegli un meteo: ti segue in tutto il sito.</p>
+          </div>
+        </div>
+      <details class="lang">
+          <summary aria-label="Lingua"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg><span>Italiano</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg></summary>
+          <ul><li><a href="../../download/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../it/download/" hreflang="it" lang="it" data-lang="it" aria-current="true">Italiano</a></li><li><a href="../../es/download/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../fr/download/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../../de/download/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../pt-br/download/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="../../ja/download/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../../ko/download/" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="../../zh-cn/download/" hreflang="zh-CN" lang="zh-CN" data-lang="zh-CN">简体中文</a></li></ul>
+        </details>
+      <a class="btn btn-small nav-dl" href="../../it/download/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Download</span></a>
+    </div>
+  </header>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <h1><span class="drift" aria-label="Scarica Drift"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>Scarica</span></span> <span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>Drift</span></span></span></h1>
+    <p class="lead reveal">Gratis durante l'accesso anticipato. Lo installi una volta; poi Drift si aggiorna da solo.</p>
+    <p class="version reveal" id="version">Versione 2.5.2 · Uscita il 26 novembre 2026</p>
+    <p class="unavailable" id="unavailable" hidden>In questo momento i download non sono raggiungibili. Riprova tra poco, oppure apri la <a href="https://github.com/AlessandroAudino/drift-releases/releases" rel="noopener">pagina di download su GitHub</a>.</p>
+  </div>
+</section>
+
+<section class="wrap platforms-grid">
+  <div class="win reveal platform" data-settle data-os="mac" id="mac" style="--d:0;--tilt:-1.2deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Mac</span></div>
+      
+    <div class="platform-in">
+      <p class="yours">Consigliato per questo computer</p>
+      <h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3Z" fill="currentColor" stroke="none"/></svg>Mac</h2>
+      <p class="req">macOS 13 Ventura o successivo</p>
+      <div class="dl-buttons">
+        <a class="btn btn-big" data-file="macArm" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.dmg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Scarica per Apple silicon</span></a>
+        <p class="btn-note">Mac con chip M1 o successivo</p>
+        <a class="btn btn-soft" data-file="macIntel" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.dmg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Scarica per Intel</span></a>
+        <p class="btn-note">Mac meno recenti con processore Intel</p>
+      </div>
+      <details class="which">
+        <summary>Che Mac ho?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg></summary>
+        <p>Fai clic sul menu Apple nell'angolo in alto a sinistra e scegli <strong>Informazioni su questo Mac</strong>. Se c'è scritto <strong>Chip: Apple M1</strong>, M2, M3 o successivo, scegli Apple silicon. Se c'è scritto <strong>Processore</strong> seguito da <strong>Intel</strong>, scegli Intel.</p>
+      </details>
+    </div>
+    </div>
+  <div class="win reveal platform" data-settle data-os="windows" id="windows" style="--d:1;--tilt:1deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Windows</span></div>
+      
+    <div class="platform-in">
+      <p class="yours">Consigliato per questo computer</p>
+      <h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.6 10.6 4.6v6.8H3.5ZM11.6 4.4 20.5 3.2v8.2h-8.9ZM3.5 12.4h7.1v6.9l-7.1-1ZM11.6 12.4h8.9v8.3l-8.9-1.2Z" fill="currentColor" stroke="none"/></svg>Windows</h2>
+      <p class="req">Windows 10 o 11, a 64 bit</p>
+      <div class="dl-buttons">
+        <a class="btn btn-big" data-file="win" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Scarica per Windows</span></a>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="wrap install" id="install">
+  <h2><span class="drift" aria-label="Come installarlo"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>Come</span></span> <span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>installarlo</span></span></span></h2>
+  <div class="install-grid">
+    <div class="win reveal guide" data-settle data-os="mac" style="--d:0;--tilt:-0.8deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Su un Mac</span></div>
+      
+      <div class="guide-in">
+        <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3Z" fill="currentColor" stroke="none"/></svg>Su un Mac</h3>
+        <ol class="steps"><li>Apri il file che hai scaricato e trascina <strong>Drift</strong> sulla cartella <strong>Applicazioni</strong>.</li><li>Apri Drift da Applicazioni. Vive nella barra dei menu in alto sullo schermo: fai clic sulla sua icona per scegliere un meteo o aprire le impostazioni.</li></ol>
+        <div class="warn">
+          <h4>Se il Mac blocca Drift la prima volta</h4>
+          <p>Le versioni in accesso anticipato non sono ancora registrate presso Apple, quindi macOS chiede conferma la prima volta che apri Drift. Cosa fare dipende dal messaggio:</p>
+          <div class="case">
+            <p class="case-title">“Apple non è riuscita a verificare che Drift sia privo di malware” oppure “Impossibile aprire Drift”</p>
+            <p>Fai clic su <strong>Fine</strong>. Apri <strong>Impostazioni di Sistema › Privacy e sicurezza</strong> e scorri in basso. Accanto a <em>“Drift” è stato bloccato</em>, fai clic su <strong>Apri comunque</strong>, inserisci la password, poi fai clic su <strong>Apri</strong>.</p>
+          </div>
+          <div class="case">
+            <p class="case-title">“Drift è danneggiato e non può essere aperto”</p>
+            <p>L'app va benissimo: è così che macOS descrive le app non registrate presso Apple. Fai clic su <strong>Annulla</strong> (non su <em>Sposta nel Cestino</em>). Apri <strong>Terminale</strong> (Applicazioni › Utility › Terminale), incolla questa riga, premi Invio, poi apri di nuovo Drift:</p>
+            <div class="code"><code>xattr -cr /Applications/Drift.app</code><button type="button" class="copy" data-copy="xattr -cr /Applications/Drift.app"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/></svg><span>Copia</span></button></div>
+            <p class="small">Toglie soltanto da Drift il segno “scaricato da internet”. Va fatto una volta sola.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="win reveal guide" data-settle data-os="windows" style="--d:1;--tilt:1deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Su Windows</span></div>
+      
+      <div class="guide-in">
+        <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.6 10.6 4.6v6.8H3.5ZM11.6 4.4 20.5 3.2v8.2h-8.9ZM3.5 12.4h7.1v6.9l-7.1-1ZM11.6 12.4h8.9v8.3l-8.9-1.2Z" fill="currentColor" stroke="none"/></svg>Su Windows</h3>
+        <ol class="steps"><li>Apri il programma di installazione che hai scaricato (<strong>Drift-Setup</strong>). Drift si installa e si avvia da solo.</li><li>Se una finestra blu dice <strong>PC protetto da Windows</strong>, fai clic su <strong>Ulteriori informazioni</strong>, poi su <strong>Esegui comunque</strong>. Compare perché le versioni in accesso anticipato non sono ancora registrate presso Microsoft.</li><li>Drift vive nell'area di notifica accanto all'orologio. Se non vedi la sua icona, fai clic sulla freccetta lì accanto.</li></ol>
+      </div>
+    </div>
+  </div>
+  <p class="after reveal"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>Fatto: da ora in poi Drift si aggiorna da solo, e le versioni registrate arriveranno allo stesso modo, senza avvisi.</span></p>
+</section>
+
+<section class="wrap other">
+  <h2><span class="drift" aria-label="Altri download"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>Altri</span></span> <span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>download</span></span></span></h2>
+  <ul class="reveal">
+    <li><a data-file="linux" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage">Linux (AppImage, sperimentale: il meteo si posa solo in fondo allo schermo)</a></li>
+    <li><a href="https://github.com/AlessandroAudino/drift-releases/releases" rel="noopener">Tutte le versioni su GitHub</a></li>
+    <li><a href="../../it/whats-new/">Le novità di ogni versione</a></li>
+  </ul>
+</section>
+</main>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <div class="foot-brand">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span>
+        <div><strong>Drift</strong><br><span>Fatto in Italia da Alessandro Audino</span></div>
+      </div>
+      <nav class="foot-links" aria-label="Drift">
+        <a href="../../it/download/">Download</a>
+        <a href="../../it/whats-new/">Novità</a>
+        <a href="../../it/privacy/">Privacy</a>
+        <span>Contatti: <span class="placeholder">indirizzo email in arrivo</span></span>
+      </nav>
+      <p class="copyright">© 2026 Alessandro Audino</p>
+    </div>
+  </footer>
+<script type="application/json" id="site-data">{"lang":"it","page":"download","feed":"https://raw.githubusercontent.com/AlessandroAudino/drift-releases/main/updates/stable.json","repo":"AlessandroAudino/drift-releases","downloads":{"version":"2.5.2","macArm":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.dmg","macIntel":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.dmg","win":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe","linux":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage"},"sceneBase":"../../images/scenes/","weatherNames":{"snow":"Neve","rain":"Pioggia","sakura":"Sakura","leaves":"Foglie","fireflies":"Lucciole","starfall":"Stelle cadenti","off":"Spento"},"status":{"snow":"Sta nevicando","rain":"Sta piovendo","sakura":"Cadono i petali","leaves":"Cadono le foglie","fireflies":"Sono uscite le lucciole","starfall":"Cadono le stelle","off":"Meteo spento"},"periods":{"dawn":"Alba","day":"Giorno","golden":"Ora d'oro","evening":"Sera","night":"Notte"},"gift":{"title":"Un regalo da Babbo Natale","messages":["Da qualche parte ti aspetta una tazza di cioccolata calda.","Stai andando meglio di quanto pensi.","Il regalo di oggi: il permesso di fare una vera pausa.","Modalità giornata di neve: attivata.","Qualcuno, là fuori, è felice che tu esista.","Alzati e stiracchiati. Le tue spalle ringraziano.","Un piccolo promemoria: bevi un po' d'acqua.","Che il tuo caffè sia forte e le tue riunioni brevi.","Questa scatola contiene un nuovo inizio. Usalo bene.","Guarda fuori dalla finestra per dieci secondi. Bello, vero?","Oggi manda un messaggio gentile a qualcuno.","Ogni fiocco di neve è diverso, e anche tu.","L'hai trovato! Domani ce n'è un altro.","Inspira contando fino a quattro, espira fino a sei. Ancora.","Stanno arrivando belle cose.","La lista delle cose da fare può aspettare un minuto. Sorridi.","Il meglio deve ancora venire.","Non ci sono due giorni uguali. Fai tuo questo.","Finora hai superato ogni giornata difficile.","Più tardi concediti qualcosa di dolce."],"lang":"it"},"text":{"copy":"Copia","copied":"Copiato","version":"Versione {version}","released":"Uscita il {date}","overEverything":"Sopra tutto","desktopOnly":"Solo sulla scrivania","paused":"In pausa per un'app a schermo intero"},"releases":"https://github.com/AlessandroAudino/drift-releases/releases"}</script>
+<script src="../../assets/site.js?v=6e16d45018" defer></script>
+<script src="../../assets/weather.js?v=099991fade" defer></script>
+</body>
+</html>

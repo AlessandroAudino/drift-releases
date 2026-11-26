@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko" data-weather="snow">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drift 다운로드</title>
+<meta name="description" content="눈, 비, 벚꽃, 가을 낙엽, 반딧불이, 별똥별이 화면 위로 내리고, 창 위에 쌓이고, 포인터와 함께 놀아요. 하루를 따라 바뀌는 그림 배경화면도 함께. Mac과 Windows용.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f1424">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var w=localStorage.getItem('drift-weather');if(/^(snow|rain|sakura|leaves|fireflies|starfall)$/.test(w))d.dataset.weather=w;if(w==='off')d.dataset.off='';}catch(e){}})();</script>
+<link rel="icon" type="image/png" href="../../images/icon-64.png">
+<link rel="apple-touch-icon" href="../../images/icon-180.png">
+<link rel="alternate" hreflang="en" href="https://alessandroaudino.github.io/drift-releases/download/">
+<link rel="alternate" hreflang="it" href="https://alessandroaudino.github.io/drift-releases/it/download/">
+<link rel="alternate" hreflang="es" href="https://alessandroaudino.github.io/drift-releases/es/download/">
+<link rel="alternate" hreflang="fr" href="https://alessandroaudino.github.io/drift-releases/fr/download/">
+<link rel="alternate" hreflang="de" href="https://alessandroaudino.github.io/drift-releases/de/download/">
+<link rel="alternate" hreflang="pt-BR" href="https://alessandroaudino.github.io/drift-releases/pt-br/download/">
+<link rel="alternate" hreflang="ja" href="https://alessandroaudino.github.io/drift-releases/ja/download/">
+<link rel="alternate" hreflang="ko" href="https://alessandroaudino.github.io/drift-releases/ko/download/">
+<link rel="alternate" hreflang="zh-CN" href="https://alessandroaudino.github.io/drift-releases/zh-cn/download/">
+<link rel="canonical" href="https://alessandroaudino.github.io/drift-releases/ko/download/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Drift 다운로드">
+<meta property="og:description" content="눈, 비, 벚꽃, 가을 낙엽, 반딧불이, 별똥별이 화면 위로 내리고, 창 위에 쌓이고, 포인터와 함께 놀아요. 하루를 따라 바뀌는 그림 배경화면도 함께. Mac과 Windows용.">
+<meta property="og:image" content="https://alessandroaudino.github.io/drift-releases/images/og.jpg">
+<meta property="og:url" content="https://alessandroaudino.github.io/drift-releases/ko/download/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../assets/site.css?v=c66463fdaf">
+
+</head>
+<body class="page-download">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<div class="sky" aria-hidden="true">
+  <div class="sky-stars"></div><div class="sky-stars big"></div>
+  <div class="sky-sun"><i></i></div>
+  <div class="sky-moon"></div>
+  <div class="sky-clouds"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<canvas id="page-weather" aria-hidden="true"></canvas>
+<div class="clock" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10Z"/></svg><span>낮</span></div>
+
+  <header class="nav">
+    <div class="nav-in">
+      <a class="brand" href="../../ko/" aria-label="Drift · 홈">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span class="word">Drift</span>
+      </a>
+      <nav aria-label="홈">
+        <a href="../../ko/#features">기능</a>
+        <a href="../../ko/#scenes">장면</a>
+        <a href="../../ko/#faq">자주 묻는 질문</a>
+      </nav>
+      
+        <div class="wmenu">
+          <button type="button" class="wmenu-btn" aria-haspopup="true" aria-expanded="false" aria-controls="wmenu-pop" title="날씨">
+            <span class="wmenu-glyphs" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg><svg class="glyph g-off" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span>
+            <span class="wmenu-label">눈이 내려요</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div class="wmenu-pop" id="wmenu-pop" role="menu" hidden>
+            <p class="wmenu-title">날씨</p>
+            <button type="button" role="menuitemradio" aria-checked="true" class="wmenu-item wx-snow" data-weather="snow"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg></span><span>눈</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-rain" data-weather="rain"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg></span><span>비</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-sakura" data-weather="sakura"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg></span><span>벚꽃</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-leaves" data-weather="leaves"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg></span><span>낙엽</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-fireflies" data-weather="fireflies"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg></span><span>반딧불이</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-starfall" data-weather="starfall"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span><span>별똥별</span></button><button type="button" role="menuitemradio" aria-checked="false" class="wmenu-item wx-off" data-weather="off"><span class="tile"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g></svg></span><span>끔</span></button>
+            <p class="wmenu-note">날씨를 고르면 사이트 어디를 가든 따라다녀요.</p>
+          </div>
+        </div>
+      <details class="lang">
+          <summary aria-label="언어"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg><span>한국어</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg></summary>
+          <ul><li><a href="../../download/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../../it/download/" hreflang="it" lang="it" data-lang="it">Italiano</a></li><li><a href="../../es/download/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../../fr/download/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../../de/download/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../../pt-br/download/" hreflang="pt-BR" lang="pt-BR" data-lang="pt-BR">Português (Brasil)</a></li><li><a href="../../ja/download/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../../ko/download/" hreflang="ko" lang="ko" data-lang="ko" aria-current="true">한국어</a></li><li><a href="../../zh-cn/download/" hreflang="zh-CN" lang="zh-CN" data-lang="zh-CN">简体中文</a></li></ul>
+        </details>
+      <a class="btn btn-small nav-dl" href="../../ko/download/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>다운로드</span></a>
+    </div>
+  </header>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <h1><span class="drift" aria-label="Drift 다운로드"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>Drift</span></span> <span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>다운로드</span></span></span></h1>
+    <p class="lead reveal">얼리 액세스 기간 동안 무료예요. 한 번만 설치하면, 그다음부터는 Drift가 알아서 업데이트해요.</p>
+    <p class="version reveal" id="version">버전 2.5.2 · 2026년 11월 26일 출시</p>
+    <p class="unavailable" id="unavailable" hidden>지금은 다운로드에 연결할 수 없어요. 잠시 후 다시 시도하거나 <a href="https://github.com/AlessandroAudino/drift-releases/releases" rel="noopener">GitHub 다운로드 페이지</a>를 열어 보세요.</p>
+  </div>
+</section>
+
+<section class="wrap platforms-grid">
+  <div class="win reveal platform" data-settle data-os="mac" id="mac" style="--d:0;--tilt:-1.2deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Mac</span></div>
+      
+    <div class="platform-in">
+      <p class="yours">이 컴퓨터에 추천</p>
+      <h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3Z" fill="currentColor" stroke="none"/></svg>Mac</h2>
+      <p class="req">macOS 13 Ventura 이상</p>
+      <div class="dl-buttons">
+        <a class="btn btn-big" data-file="macArm" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.dmg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Apple 실리콘용 다운로드</span></a>
+        <p class="btn-note">M1 칩 이상을 탑재한 Mac</p>
+        <a class="btn btn-soft" data-file="macIntel" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.dmg"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Intel용 다운로드</span></a>
+        <p class="btn-note">Intel 프로세서를 탑재한 이전 Mac</p>
+      </div>
+      <details class="which">
+        <summary>내 Mac은 어떤 건가요?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></svg></summary>
+        <p>왼쪽 위의 Apple 메뉴를 클릭하고 <strong>이 Mac에 관하여</strong>를 고르세요. <strong>칩: Apple M1</strong>, M2, M3 이상이라고 나오면 Apple 실리콘용을, <strong>프로세서</strong> 다음에 <strong>Intel</strong>이라고 나오면 Intel용을 고르세요.</p>
+      </details>
+    </div>
+    </div>
+  <div class="win reveal platform" data-settle data-os="windows" id="windows" style="--d:1;--tilt:1deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Windows</span></div>
+      
+    <div class="platform-in">
+      <p class="yours">이 컴퓨터에 추천</p>
+      <h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.6 10.6 4.6v6.8H3.5ZM11.6 4.4 20.5 3.2v8.2h-8.9ZM3.5 12.4h7.1v6.9l-7.1-1ZM11.6 12.4h8.9v8.3l-8.9-1.2Z" fill="currentColor" stroke="none"/></svg>Windows</h2>
+      <p class="req">Windows 10 또는 11, 64비트</p>
+      <div class="dl-buttons">
+        <a class="btn btn-big" data-file="win" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Windows용 다운로드</span></a>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="wrap install" id="install">
+  <h2><span class="drift" aria-label="설치 방법"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>설치</span></span> <span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>방법</span></span></span></h2>
+  <div class="install-grid">
+    <div class="win reveal guide" data-settle data-os="mac" style="--d:0;--tilt:-0.8deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Mac에서</span></div>
+      
+      <div class="guide-in">
+        <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3Z" fill="currentColor" stroke="none"/></svg>Mac에서</h3>
+        <ol class="steps"><li>다운로드한 파일을 열고 <strong>Drift</strong>를 <strong>응용 프로그램</strong> 폴더로 끌어다 놓으세요.</li><li>응용 프로그램에서 Drift를 여세요. Drift는 화면 맨 위 메뉴 막대에 있어요. 아이콘을 클릭해 날씨를 고르거나 설정을 열 수 있어요.</li></ol>
+        <div class="warn">
+          <h4>처음 열 때 Mac이 Drift를 막는다면</h4>
+          <p>얼리 액세스 버전은 아직 Apple에 등록되지 않아서, 처음 Drift를 열 때 macOS가 확인을 요청해요. 메시지에 따라 이렇게 하세요:</p>
+          <div class="case">
+            <p class="case-title">‘Apple은 Drift에 악성 코드가 없음을 확인할 수 없습니다’ 또는 ‘Drift을(를) 열 수 없습니다’</p>
+            <p><strong>완료</strong>를 클릭하세요. <strong>시스템 설정 › 개인정보 보호 및 보안</strong>을 열고 아래로 스크롤하세요. <em>‘Drift’이(가) 차단되었습니다</em> 옆의 <strong>그래도 열기</strong>를 클릭하고, 암호를 입력한 다음 <strong>열기</strong>를 클릭하세요.</p>
+          </div>
+          <div class="case">
+            <p class="case-title">‘Drift이(가) 손상되었기 때문에 열 수 없습니다’</p>
+            <p>앱에는 아무 문제가 없어요. Apple에 등록되지 않은 앱을 macOS가 이렇게 표시할 뿐이에요. <strong>취소</strong>를 클릭하세요(<em>휴지통으로 이동</em>은 누르지 마세요). <strong>터미널</strong>(응용 프로그램 › 유틸리티 › 터미널)을 열고 아래 한 줄을 붙여 넣은 다음 Return 키를 누르고, Drift를 다시 여세요:</p>
+            <div class="code"><code>xattr -cr /Applications/Drift.app</code><button type="button" class="copy" data-copy="xattr -cr /Applications/Drift.app"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/></svg><span>복사</span></button></div>
+            <p class="small">Drift에서 ‘인터넷에서 다운로드함’ 표시만 지워요. 한 번만 하면 돼요.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="win reveal guide" data-settle data-os="windows" style="--d:1;--tilt:1deg">
+      <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="win-title">Windows에서</span></div>
+      
+      <div class="guide-in">
+        <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.6 10.6 4.6v6.8H3.5ZM11.6 4.4 20.5 3.2v8.2h-8.9ZM3.5 12.4h7.1v6.9l-7.1-1ZM11.6 12.4h8.9v8.3l-8.9-1.2Z" fill="currentColor" stroke="none"/></svg>Windows에서</h3>
+        <ol class="steps"><li>다운로드한 설치 프로그램(<strong>Drift-Setup</strong>)을 여세요. Drift가 알아서 설치되고 실행돼요.</li><li>파란 창에 <strong>Windows의 PC 보호</strong>라고 나오면 <strong>추가 정보</strong>를 클릭한 다음 <strong>실행</strong>을 클릭하세요. 얼리 액세스 버전이 아직 Microsoft에 등록되지 않아서 나타나는 창이에요.</li><li>Drift는 시계 옆 시스템 트레이에 있어요. 아이콘이 보이지 않으면 그곳의 작은 화살표를 클릭하세요.</li></ol>
+      </div>
+    </div>
+  </div>
+  <p class="after reveal"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.2 4.2L19 7"/></svg><span>끝이에요. 이제부터 Drift는 알아서 업데이트되고, 등록된 버전도 같은 방법으로, 경고 없이 도착해요.</span></p>
+</section>
+
+<section class="wrap other">
+  <h2><span class="drift" aria-label="다른 다운로드"><span class="w" aria-hidden="true" style="--i:0;--r:-4deg"><span>다른</span></span> <span class="w" aria-hidden="true" style="--i:1;--r:5deg"><span>다운로드</span></span></span></h2>
+  <ul class="reveal">
+    <li><a data-file="linux" href="https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage">Linux(AppImage, 실험 버전: 날씨는 화면 아래쪽에만 쌓여요)</a></li>
+    <li><a href="https://github.com/AlessandroAudino/drift-releases/releases" rel="noopener">GitHub의 모든 버전</a></li>
+    <li><a href="../../ko/whats-new/">버전별 새로운 기능</a></li>
+  </ul>
+</section>
+</main>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <div class="foot-brand">
+        <span class="logo" aria-hidden="true"><svg class="glyph g-snow" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-spin"><path d="M12 2.5v19M3.8 7.25l16.4 9.5M3.8 16.75l16.4-9.5"/><path d="M9.5 4.5 12 6.5l2.5-2M9.5 19.5 12 17.5l2.5 2M4.6 10.4l3.1-.6-1.1-3M19.4 13.6l-3.1.6 1.1 3M4.6 13.6l3.1.6-1.1 3M19.4 10.4l-3.1-.6 1.1-3"/></g></svg><svg class="glyph g-rain" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M7 15.6H6.6a4.1 4.1 0 0 1-.5-8.2A5.6 5.6 0 0 1 16.7 6a4.8 4.8 0 0 1 .6 9.6H17"/><g class="g-drops"><path d="M8.6 17.6 7.7 20.4M12.4 17.2l-1.1 3.4M16.2 17.6l-.9 2.8"/></g></g></svg><svg class="glyph g-sakura" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="g-sway"><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(0 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(72 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(144 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(216 12 12)"/><path d="M12 11C9.8 9.4 9 6.3 10.2 3L12 4.4 13.8 3c1.2 3.3.4 6.4-1.8 8Z" transform="rotate(288 12 12)"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></g></svg><svg class="glyph g-leaves" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" class="g-rock"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19 14 10M10.2 13.8l-.4-3M12.4 11.6l3 .4"/></g></svg><svg class="glyph g-fireflies" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M10.9 4.3C10.1 2.9 9 2.4 7.9 2.7M13.1 4.3c.8-1.4 1.9-1.9 3-1.6"/><circle cx="12" cy="5.4" r="1.5"/><path class="g-wing g-wing-l" d="M10.3 8.2C7.4 7.4 4.9 8.8 4.6 11.6c2.6.9 5-.3 6-2.6Z"/><path class="g-wing g-wing-r" d="M13.7 8.2c2.9-.8 5.4.6 5.7 3.4-2.6.9-5-.3-6-2.6Z"/><path d="M10.2 12.4V9.3a1.8 1.8 0 0 1 3.6 0v3.1"/><g class="g-glow"><circle cx="12" cy="15.6" r="3.3" fill="currentColor" stroke="none"/><path d="M12 20.9v1.3M7.8 18.6l-1 .9M16.2 18.6l1 .9" stroke-width="1.4"/></g></g></svg><svg class="glyph g-starfall" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><g class="g-trail"><path d="M3 3.2 10.6 10.8M3.4 8.6l3.8 3.8M8.6 3.4l3.8 3.8"/></g><path class="g-star" d="m16.2 10.3 1.5 3 3.2.5-2.3 2.3.5 3.2-2.9-1.5-2.9 1.5.6-3.2-2.3-2.3 3.2-.5Z"/></g></svg></span>
+        <div><strong>Drift</strong><br><span>이탈리아에서 Alessandro Audino 제작</span></div>
+      </div>
+      <nav class="foot-links" aria-label="Drift">
+        <a href="../../ko/download/">다운로드</a>
+        <a href="../../ko/whats-new/">새로운 기능</a>
+        <a href="../../ko/privacy/">개인정보</a>
+        <span>연락처: <span class="placeholder">이메일 주소 준비 중</span></span>
+      </nav>
+      <p class="copyright">© 2026 Alessandro Audino</p>
+    </div>
+  </footer>
+<script type="application/json" id="site-data">{"lang":"ko","page":"download","feed":"https://raw.githubusercontent.com/AlessandroAudino/drift-releases/main/updates/stable.json","repo":"AlessandroAudino/drift-releases","downloads":{"version":"2.5.2","macArm":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-arm64.dmg","macIntel":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-mac-x64.dmg","win":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-Setup-2.5.2.exe","linux":"https://github.com/AlessandroAudino/drift-releases/releases/download/v2.5.2/Drift-2.5.2-linux-x86_64.AppImage"},"sceneBase":"../../images/scenes/","weatherNames":{"snow":"눈","rain":"비","sakura":"벚꽃","leaves":"낙엽","fireflies":"반딧불이","starfall":"별똥별","off":"끔"},"status":{"snow":"눈이 내려요","rain":"비가 내려요","sakura":"꽃잎이 흩날려요","leaves":"낙엽이 떨어져요","fireflies":"반딧불이가 나왔어요","starfall":"별이 떨어져요","off":"날씨가 꺼져 있어요"},"periods":{"dawn":"새벽","day":"낮","golden":"골든 아워","evening":"저녁","night":"밤"},"gift":{"title":"산타의 선물","messages":["어딘가에서 따뜻한 코코아 한 잔이 당신을 기다리고 있어요.","생각보다 훨씬 잘하고 있어요.","오늘의 선물: 제대로 쉬어도 된다는 허락.","눈 오는 날 기분, 잠금 해제.","어딘가의 누군가는 당신이 있어서 정말 기뻐해요.","일어나서 기지개를 켜 보세요. 어깨가 고마워할 거예요.","작은 알림: 물 한 잔 마시기.","커피는 진하게, 회의는 짧게.","이 상자에는 새로운 시작이 들어 있어요. 잘 써 주세요.","10초만 창밖을 바라보세요. 좋죠?","오늘은 누군가에게 다정한 메시지를 보내 보세요.","눈송이는 모두 다르고, 당신도 그래요.","찾았네요! 내일 또 있어요.","넷까지 세며 들이쉬고, 여섯까지 내쉬어요. 한 번 더.","좋은 일이 다가오고 있어요.","할 일 목록은 1분쯤 기다려 줘요. 웃어 봐요.","가장 좋은 일은 아직 오지 않았어요.","같은 날은 두 번 오지 않아요. 오늘을 당신의 날로.","지금까지 힘든 날들을 모두 이겨냈어요.","이따가 달콤한 걸로 기분을 내 보세요."],"lang":"ko"},"text":{"copy":"복사","copied":"복사됨","version":"버전 {version}","released":"{date} 출시","overEverything":"모든 창 위","desktopOnly":"데스크톱에만","paused":"전체 화면 앱 때문에 일시 정지됨"},"releases":"https://github.com/AlessandroAudino/drift-releases/releases"}</script>
+<script src="../../assets/site.js?v=6e16d45018" defer></script>
+<script src="../../assets/weather.js?v=099991fade" defer></script>
+</body>
+</html>
